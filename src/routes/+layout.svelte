@@ -1,5 +1,9 @@
 <script lang="ts">
 	import '../app.postcss';
+
+	import { page } from '$app/stores';
+
+	const repoUrl: string = "https://github.com/owenleonard11/owenleonard/blob/main/src/routes";
 </script>
 
 <div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-4 text-white shadow-2xl grid grid-cols-2">
@@ -25,6 +29,6 @@
 		<span>|</span>
 		<span>background textures by <a href="https://www.transparenttextures.com/" class="anchor">Transparent Textures</a></span>
 		<span>|</span>
-		<span>view <a href="/" class="anchor">page source</a> on Github</span>
-	</div>
+		<span>view <a href="{repoUrl}{$page.url.pathname}+page.svelte" class="anchor">page source</a> on Github</span>
+	</div>	
 </div>
