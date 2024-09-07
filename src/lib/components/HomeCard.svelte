@@ -9,6 +9,6 @@
     </header>
     <hr class="opacity-50" />
     <footer class="p-4">
-        <h3 class="h3 font-bold">{text} >>></h3>
+        <h3 class="h3 font-bold mx-4">{text} ></h3>
     </footer>
 </a>

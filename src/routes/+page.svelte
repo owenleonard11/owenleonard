@@ -13,13 +13,34 @@
 
 	<div class="grid grid-cols-3">
 		<HomeCard href="/projects" text="read my writing">
-			ICON
+			<div class="mx-8 mt-8 p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-warning-100">
+				<div class="p-4 space-y-4">
+					<div class="grid grid-cols-3 gap-8">
+						<div class="placeholder bg-surface-500" />
+					</div>
+					<div class="grid grid-cols-3 gap-4">
+						<div class="placeholder bg-surface-500" />
+					</div>
+					<div class="grid grid-cols-3 gap-4">
+						<div class="placeholder bg-surface-500 col-span-2" />
+						<div class="placeholder bg-surface-500" />
+					</div>
+					<div class="grid grid-cols-3 gap-4">
+						<div class="placeholder bg-surface-500" />
+						<div class="placeholder bg-surface-500 col-span-2" />
+					</div>
+				</div>
+			</div>
 		</HomeCard>
 		<HomeCard href="/projects" text="check out my code">
-			ICON
+			<div class="mx-8 mt-8 p-4 border-black border-t-2 border-x-2 rounded-t-md">
+				code placeholder
+			</div>
 		</HomeCard>
 		<HomeCard href="/projects" text="get in touch">
-			ICON
+			<div class="mx-8 mt-8 p-4 border-black border-t-2 border-x-2 rounded-t-md">
+				epistolary placeholder
+			</div>
 		</HomeCard>
 	</div>
 </div>
