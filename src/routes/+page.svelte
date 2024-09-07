@@ -3,8 +3,7 @@
 </script>
 
 <div class="space-y-5 mx-16">
-	<!-- name and bio -->
-	<div class="my-16">
+	<div class="my-16 ml-4">
 		<h1 class="text-8xl">owen leonard</h1>
 		<div class="text-4xl font-extrabold ml-16 mt-4">
 			writing, programming, and cultural criticism
