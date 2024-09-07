@@ -30,6 +30,6 @@
 		<span>|</span>
 		<span>background textures by <a href="https://www.transparenttextures.com/" class="anchor">Transparent Textures</a></span>
 		<span>|</span>
-		<span>view <a href="{repoUrl}{$page.url.pathname}+page.svelte" class="anchor">page source</a> on Github</span>
+		<span>view <a href="{repoUrl}{$page.url.pathname}/+page.svelte" class="anchor">page source</a> on Github</span>
 	</div>	
 </div>
