@@ -1,4 +1,5 @@
 <script lang="ts">
+	import HomeCard from "$lib/components/HomeCard.svelte";
 </script>
 
 <div class="space-y-5 mx-16">
@@ -11,32 +12,14 @@
 	</div>
 
 	<div class="grid grid-cols-3">
-		<a class="card card-hover basis-0 grow-1 shrink-1 m-4" href="/elements/cards">
-			<header>
-				IMAGE HERE
-			</header>
-			<hr class="opacity-50" />
-			<footer class="p-4">
-				<h3 class="h3 font-bold">Read my writing >>></h3>
-			</footer>
-		</a>
-		<a class="card card-hover basis-0 grow-1 shrink-1 m-4" href="/elements/cards">
-			<header>
-				IMAGE HERE
-			</header>
-			<hr class="opacity-50" />
-			<footer class="p-4">
-				<h3 class="h3 font-bold">Check out my code >>></h3>
-			</footer>
-		</a>
-		<a class="card card-hover basis-0 grow-1 shrink-1 m-4" href="/contact">
-			<header>
-				IMAGE HERE
-			</header>
-			<hr class="opacity-50" />
-			<footer class="p-4">
-				<h3 class="h3 font-bold">Get in touch >>></h3>
-			</footer>
-		</a>
+		<HomeCard href="/projects" text="read my writing">
+			ICON
+		</HomeCard>
+		<HomeCard href="/projects" text="check out my code">
+			ICON
+		</HomeCard>
+		<HomeCard href="/projects" text="get in touch">
+			ICON
+		</HomeCard>
 	</div>
 </div>
