@@ -34,25 +34,25 @@
 		<HomeCard href="/projects" text="check out my code">
 			<div class="mx-8 mt-8 p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-surface-500">
 				<div class="p-4 space-y-4">
-					<div class="grid grid-cols-8 gap-4">
+					<div class="grid grid-cols-8 gap-2">
 						<div class="placeholder bg-warning-400" />
 						<div class="placeholder bg-primary-400 col-span-2"/>
-						<div class="placeholder bg-surface-100" />
-						<div class="placeholder bg-surface-100 col-span-2" />
+						<div class="placeholder bg-success-400" />
+						<div class="placeholder bg-success-400 col-span-2" />
 					</div>
-					<div class="grid grid-cols-8 gap-4">
+					<div class="grid grid-cols-8 gap-2">
 						<div />
 						<div class="placeholder bg-error-400" />
 						<div class="placeholder bg-primary-400 col-span-2" />
 						<div class="placeholder bg-primary-400" />
 					</div>
-					<div class="grid grid-cols-8 gap-4">
+					<div class="grid grid-cols-8 gap-2">
 						<div />
 						<div class="placeholder bg-success-400 col-span-2" />
 						<div class="placeholder bg-warning-400 col-span-2" />
 						<div class="placeholder bg-success-400" />
 					</div>
-					<div class="grid grid-cols-8 gap-4">
+					<div class="grid grid-cols-8 gap-2">
 						<div class="placeholder bg-primary-400 col-span-2" />
 						<div class="placeholder bg-error-400 col-span-2" />
 					</div>
