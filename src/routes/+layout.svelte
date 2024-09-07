@@ -9,6 +9,7 @@
 <div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-4 text-white shadow-2xl grid grid-cols-2">
 	<div>
 		<a href="/" class="btn text-2xl">(Icon)</a>
+		<span class="text-3xl font-bold">owenleonard.ai</span>
 	</div>
 	<div class="flex flex-row justify-end">
 		<a href="/" class="btn text-2xl">home</a>
