@@ -10,7 +10,8 @@ export default {
 	theme: {
 		extend: {
 			strokeWidth: {
-				'12': '12px'
+				'12': '12px',
+				'4': '4px'
 			},
 			height: {
 				'128': '32rem'
