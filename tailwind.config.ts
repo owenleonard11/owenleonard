@@ -11,6 +11,12 @@ export default {
 		extend: {
 			strokeWidth: {
 				'12': '12px'
+			},
+			height: {
+				'128': '32rem'
+			},
+			width: {
+				'128': '32rem'
 			}
 		},
 	},
