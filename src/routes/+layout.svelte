@@ -22,7 +22,7 @@
 
 <slot />
 
-<div class="absolute bottom-0 grid grid-cols-1 p-4">
+<div class="absolute bottom-0 p-4 w-full flex justify-center">
 	<div>
 		<span>
 			powered by <a href="https://kit.svelte.dev" class="anchor">SvelteKit</a>
