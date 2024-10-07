@@ -1,6 +1,8 @@
 <script lang="ts">
 	import '../app.postcss';
     import OwenIcon from '$lib/components/OwenIcon.svelte';
+
+	export const prerender = true;
 </script>
 
 <svelte:head>
