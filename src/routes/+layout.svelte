@@ -1,9 +1,15 @@
 <script lang="ts">
 	import '../app.postcss';
-
-	import { page } from '$app/stores';
     import OwenIcon from '$lib/components/OwenIcon.svelte';
 </script>
+
+<svelte:head>
+	<link rel="icon" type="image/png" href="/static/favicon-48x48.png" sizes="48x48" />
+	<link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
+	<link rel="shortcut icon" href="/static/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
+	<link rel="manifest" href="/static/site.webmanifest" />
+</svelte:head>
 
 <div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-4 text-white shadow-2xl flex flex-row flex-wrap">
 	<div class="flex items-center mr-auto">
