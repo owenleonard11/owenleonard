@@ -27,6 +27,9 @@
             or go straight to
             <a href="https://github.com/owenleonard11" class="anchor">my Github</a>
             to find the source code and documentation.
+            <a href="/disjecta" class="anchor">Disjecta</a>
+            is my intermittently updated blog, where I post shorter casual writings
+            that don't fit into other projects.
         </p>
         <p class="mt-8">
             Please <a href="/contact" class="anchor">contact me</a> for my up-to-date resume and CV or with any other questions.
