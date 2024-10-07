@@ -2,8 +2,8 @@
     import OwenIcon from "$lib/components/OwenIcon.svelte";
 </script>
 
-<div class="grid gap-4 grid-cols-3 m-16 mt-24">
-    <div>
+<div class="flex flex-row m-16 mt-24">
+    <div class="mr-8">
         <OwenIcon classes="h-128 w-128 stroke-4"/>
         <div class="mt-4 text-center w-128 text-lg px-4">
             after Constantin Brancusi's 
