@@ -29,7 +29,7 @@
 				</div>
 			</div>
 		</HomeCard>
-		<HomeCard href="/projects" text="check out my code" bg="surface-700">
+		<HomeCard href="/projects" text="check out my code" bg="surface-900">
 			<div class="p-4 space-y-4">
 				<div class="grid grid-cols-8 gap-2">
 					<div class="placeholder bg-warning-400" />
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 		</HomeCard>
-		<HomeCard href="/contact" text="download my CV" bg="warning-100">
+		<HomeCard href="/cv" text="download my CV" bg="warning-100">
 			<div class="p-4 space-y-4">
 				<div class="grid grid-cols-5 gap-4">
 					<div />
