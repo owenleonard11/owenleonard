@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.postcss';
+	import { base } from '$app/paths'
     import OwenIcon from '$lib/components/OwenIcon.svelte';
 
 	export const prerender = true;
@@ -19,11 +20,11 @@
 		<h2 class="h2 ml-1">owenleonard.ai</h2>
 	</div>
 	<div class="flex justify-center font-bold flex-wrap">
-		<a href="/" class="btn text-2xl">home</a>
-		<a href="/projects" class="btn text-2xl">projects</a>
-		<a href="/disjecta" class="btn text-2xl">disjecta</a>
-		<a href="/contact" class="btn text-2xl">contact</a>
-		<a href="/about" class="btn text-2xl">about</a>
+		<a href="{base}/" class="btn text-2xl">home</a>
+		<a href="{base}/projects" class="btn text-2xl">projects</a>
+		<a href="{base}/disjecta" class="btn text-2xl">disjecta</a>
+		<a href="{base}/contact" class="btn text-2xl">contact</a>
+		<a href="{base}/about" class="btn text-2xl">about</a>
 	</div>
 </div>
 
