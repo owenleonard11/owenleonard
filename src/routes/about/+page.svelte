@@ -25,7 +25,7 @@
             You can find an overview of my projects on this site's
             <a href="/projects" class="anchor">projects page</a>,
             or go straight to
-            <a href="https://github.com/owenleonard11" class="anchor">my Github</a>
+            <a target="_blank" href="https://github.com/owenleonard11" class="anchor">my Github</a>
             to find the source code and documentation.
             <a href="/disjecta" class="anchor">Disjecta</a>
             is my intermittently updated blog, where I post shorter casual writings
@@ -35,10 +35,10 @@
             Please <a href="/contact" class="anchor">contact me</a> for my up-to-date resume and CV or with any other questions.
         </p>
         <p class="mt-8">
-            This site is powered by <a href="https://kit.svelte.dev" class="anchor">SvelteKit</a>
-            with UI elements from <a href="https://skeleton.dev" class="anchor">Skeleton</a>. 
-            Background textures are by <a href="https://www.transparenttextures.com/" class="anchor">Transparent Textures</a>.
-            You can view the site's source code on <a href="https://github.com/owenleonard11/owenleonard" class="anchor">Github</a>.
+            This site is powered by <a target="_blank" href="https://kit.svelte.dev" class="anchor">SvelteKit</a>
+            with UI elements from <a target="_blank" href="https://skeleton.dev" class="anchor">Skeleton</a>. 
+            Background textures are by <a target="_blank" href="https://www.transparenttextures.com/" class="anchor">Transparent Textures</a>.
+            You can view the site's source code on <a target="_blank" href="https://github.com/owenleonard11/owenleonard" class="anchor">Github</a>.
         </p>
     </div>
 </div>

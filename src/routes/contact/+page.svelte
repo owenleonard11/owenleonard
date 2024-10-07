@@ -18,7 +18,7 @@
         If you want to report a bug, suggest a feature, or contribute code to any of my
         projects, please look for the <code class="code text-xl">README.md</code> file in
         the corresponding repository on my 
-        <a href="https://github.com/owenleonard11" class="anchor">Github</a>.
+        <a target="_blank" href="https://github.com/owenleonard11" class="anchor">Github</a>.
         Most will have instructions under an "Issues & Contributions" header.
     </div>
 </div>
