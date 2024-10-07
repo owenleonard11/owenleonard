@@ -36,7 +36,7 @@
         </p>
         <p class="mt-8">
             This site is powered by <a href="https://kit.svelte.dev" class="anchor">SvelteKit</a>
-            with UI elements from <a href="skeleton.dev" class="anchor">Skeleton</a>. 
+            with UI elements from <a href="https://skeleton.dev" class="anchor">Skeleton</a>. 
             Background textures are by <a href="https://www.transparenttextures.com/" class="anchor">Transparent Textures</a>.
             You can view the site's source code on <a href="https://github.com/owenleonard11/owenleonard" class="anchor">Github</a>.
         </p>
