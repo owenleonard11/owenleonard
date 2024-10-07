@@ -15,6 +15,7 @@
 	<div class="flex justify-end">
 		<a href="/" class="btn text-2xl font-bold">home</a>
 		<a href="/projects" class="btn text-2xl font-bold">projects</a>
+		<a href="/disjecta" class="btn text-2xl font-bold">disjecta</a>
 		<a href="/contact" class="btn text-2xl font-bold">contact</a>
 		<a href="/about" class="btn text-2xl font-bold">about</a>
 	</div>
