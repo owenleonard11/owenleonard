@@ -2,8 +2,6 @@
 	import '../app.postcss';
 	import { base } from '$app/paths'
     import OwenIcon from '$lib/components/OwenIcon.svelte';
-
-	export const prerender = true;
 </script>
 
 <svelte:head>
