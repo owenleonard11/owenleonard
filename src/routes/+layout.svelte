@@ -7,17 +7,17 @@
 	const repoUrl: string = "https://github.com/owenleonard11/owenleonard/blob/main/src/routes";
 </script>
 
-<div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-4 text-white shadow-2xl grid grid-cols-2 content-center">
-	<div class="flex items-center">
+<div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-4 text-white shadow-2xl flex flex-row flex-wrap">
+	<div class="flex items-center mr-auto">
 		<OwenIcon classes="stroke-12 h-12 w-12"/>
 		<h2 class="h2 ml-1">owenleonard.ai</h2>
 	</div>
-	<div class="flex justify-end">
-		<a href="/" class="btn text-2xl font-bold">home</a>
-		<a href="/projects" class="btn text-2xl font-bold">projects</a>
-		<a href="/disjecta" class="btn text-2xl font-bold">disjecta</a>
-		<a href="/contact" class="btn text-2xl font-bold">contact</a>
-		<a href="/about" class="btn text-2xl font-bold">about</a>
+	<div class="flex justify-center font-bold flex-wrap">
+		<a href="/" class="btn text-2xl">home</a>
+		<a href="/projects" class="btn text-2xl">projects</a>
+		<a href="/disjecta" class="btn text-2xl">disjecta</a>
+		<a href="/contact" class="btn text-2xl">contact</a>
+		<a href="/about" class="btn text-2xl">about</a>
 	</div>
 </div>
 
