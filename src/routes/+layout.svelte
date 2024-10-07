@@ -3,8 +3,6 @@
 
 	import { page } from '$app/stores';
     import OwenIcon from '$lib/components/OwenIcon.svelte';
-
-	const repoUrl: string = "https://github.com/owenleonard11/owenleonard/blob/main/src/routes";
 </script>
 
 <div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-4 text-white shadow-2xl flex flex-row flex-wrap">
@@ -22,16 +20,3 @@
 </div>
 
 <slot />
-
-<div class="absolute bottom-0 p-4 w-full flex justify-center">
-	<div>
-		<span>
-			powered by <a href="https://kit.svelte.dev" class="anchor">SvelteKit</a>
-			and <a href="skeleton.dev" class="anchor">Skeleton</a>
-		</span>
-		<span>|</span>
-		<span>background textures by <a href="https://www.transparenttextures.com/" class="anchor">Transparent Textures</a></span>
-		<span>|</span>
-		<span>view <a href="{repoUrl}{$page.url.pathname}/+page.svelte" class="anchor">page source</a> on Github</span>
-	</div>	
-</div>

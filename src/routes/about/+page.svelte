@@ -34,5 +34,11 @@
         <p class="mt-8">
             Please <a href="/contact" class="anchor">contact me</a> for my up-to-date resume and CV or with any other questions.
         </p>
+        <p class="mt-8">
+            This site is powered by <a href="https://kit.svelte.dev" class="anchor">SvelteKit</a>
+            with UI elements from <a href="skeleton.dev" class="anchor">Skeleton</a>. 
+            Background textures are by <a href="https://www.transparenttextures.com/" class="anchor">Transparent Textures</a>.
+            You can view the site's source code on <a href="https://github.com/owenleonard11/owenleonard" class="anchor">Github</a>.
+        </p>
     </div>
 </div>
