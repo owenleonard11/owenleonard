@@ -3,7 +3,7 @@
     export let text: string
 </script>
 
-<a class="card card-hover basis-0 grow-1 shrink-1 m-4 bg-primary-300 rounded-lg" href={href}>
+<a class="card card-hover min-w-96 m-4 bg-primary-300 rounded-lg grow" href={href}>
     <header>
         <slot />
     </header>
