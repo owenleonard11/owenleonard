@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v4
       
       - name: Install packages
-        uses: npm install
+        run: npm install
 
       - name: Build site
         env:
