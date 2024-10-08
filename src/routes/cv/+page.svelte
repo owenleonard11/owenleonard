@@ -1,6 +1,8 @@
 <script lang="ts">
     import CVSection from "$lib/components/CV/CVSection.svelte";
     import CVEntry from "$lib/components/CV/CVEntry.svelte";
+
+    import * as cv from "$lib/text/cv.json";
 </script>
 
 <div class="flex flex-row h-[80dvh]">
@@ -12,40 +14,26 @@
             <a class="hover:anchor" href="mailto:owenleonard11@gmail.com">owenleonard11@gmail.com</a>
         </p>
         <hr class="mt-2"/>
-        <CVSection id="education" title="Education">
-            <CVEntry left="University of California, Santa Barbara" bold="left" />
-            <CVEntry left="PhD Student, Department of English" right="2024 - present" hoverShadow /> 
-            <CVEntry left="University of Miami" right="" bold="left" />
-            <CVEntry left="B.S. in Computer Science and English" right="2020 - 2023" hoverShadow /> 
-        </CVSection>
-        <CVSection id="fellowships" title="Fellowships & Scholarships">
-            <CVEntry left="University of California, Santa Barbara" bold="left" />
-            <CVEntry left="Regents Fellowship in English" right="2024-2029" hoverShadow />
-            <CVEntry left="Yvonne Gartrell Award" right="Fall 2024" hoverShadow />
-            <CVEntry left="University of Miami" bold="left" />
-            <CVEntry left="'Canes Achievement Award" right="2020 - 2024" hoverShadow />
-        </CVSection>
-        <CVSection id="honors" title="Honor & Awards">
-            <CVEntry left="University of Miami" bold="left" />
-            <CVEntry left="Departmental Honors in English" right="2023" hoverShadow >
-                <span class="text-slate-700 ml-2 text-sm">for undergraduate honors thesis</span>
-            </CVEntry>
-            <CVEntry left="Robert M. Healy Award" right="2022" hoverShadow >
-                <span class="text-slate-700 ml-2 text-sm">for best undergraduate essay in the humanities</span>
-            </CVEntry>
-        </CVSection>
-        <CVSection id="research" title="Research">
-            <CVEntry left="University of Miami" right="" bold="left" />
-            <CVEntry left="Undergraduate Research Assistant in Digital Humanities" right="2022" hoverShadow />
-        </CVSection>
-        <CVSection id="experience" title="Select Technical Experience">
-            <CVEntry left="DexCom Continuous Glucose Monitoring" bold="left" />
-            <CVEntry left="Software Validation & Verification Intern" right="Summer 2023" hoverShadow />
-            <CVEntry left="Harmelin Media" right="" bold="left" />
-            <CVEntry left="Software Engineer" right="2020 - 2021" hoverShadow />
-            <CVEntry left="University of Pennsylvania Health System" right="" bold="left" />
-            <CVEntry left="Data Science Intern" right="Summer 2019" hoverShadow />
-        </CVSection>
+        {#each cv.sections as section}
+            <p class="text-xl font-bold mt-2">{section.title}</p>
+            <div class="grid grid-cols-4 gap-x-16">
+                {#each section.entries as entry}
+                    <div class="contents {entry[4] ? "[&>*]:hover:shadow-lg [&>*]:hover:cursor-pointer": ""}">
+                        <div class="justify-self-start col-span-3 w-full rounded-sm">
+                            <p class={entry[3] == "left" ? "font-bold" : ""}>
+                                {entry[0]}
+                                {#if entry[2]}
+                                    <span class="text-slate-700 ml-2 text-sm">{entry[2]}</span>
+                                {/if}
+                            </p>
+                        </div>
+                        <div class="justify-self-end w-full text-right">
+                            <p class={entry[3] == "right" ? "font-bold" : ""}>{entry[1]}</p>
+                        </div>
+                    </div>
+                {/each}
+            </div>
+        {/each}
     </div>
     <div>
         <div class="card p-4 m-8 ml-0 text-lg max-w-2xl rounded-lg">

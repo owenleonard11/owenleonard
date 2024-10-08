@@ -1,0 +1,51 @@
+{
+    "sections": [
+        {
+            "title": "Education",
+            "entries": [
+                ["University of California, Santa Barbara", "", "", "left", false],
+                ["PhD Student, Department of English", "20204 - present", "", "", true],
+                ["University of Miami", "", "", "left", false],
+                ["B.S. in Computer Science and English", "2020 - 2024", "", "", true]
+            ]
+        },
+        {
+            "title": "Fellowships & Scholarships",
+            "entries": [
+                ["University of California, Santa Barbara", "", "", "left", false],
+                ["Regents Fellowship in English", "2024 - 2029", "", "", true],
+                ["Yvonne Gartrell Award", "Fall 2024", "", "", true],
+                ["University of Miami", "", "", "left", false],
+                ["'Canes Achievement Award", "2020 - 2024", "", "", true]
+            ]
+        },
+        {
+            "title": "Honors & Awards",
+            "entries": [
+                ["University of Miami", "", "", "left", false],
+                ["Departmental Honors in English", "2023", "for undergraduate honors thesis", "", true],
+                ["Robert M. Healy Award", "2022", "for best undergraduate essay in the humanities", "", true]
+            ]
+        },
+        {
+            "title": "Research",
+            "entries": [
+                ["Critical Machine Learning Studies", "", "UCSB English", "left", false],
+                ["Graduate Research Assistant", "2024 - present", "", "", true],
+                ["Lindsay Thomas", "", "University of Miami", "left", false],
+                ["Undergraduate Research Assistant", "2022", "", "", true]
+            ]
+        },
+        {
+            "title": "Select Technical Experience",
+            "entries": [
+                ["Dexcom Continuous Glucose Monitoring", "", "", "left", false],
+                ["Software Validation & Verification Intern", "Summer 2023", "", "", true],
+                ["Harmelin Media", "", "", "left", false],
+                ["Software Engineer", "2020-2021", "", "", true],
+                ["University of Pennsylvania Health System", "", "", "left", false],
+                ["Data Science Intern", "Summer 2019", "", "", true]
+            ]
+        }
+    ]
+}
