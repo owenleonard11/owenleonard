@@ -10,41 +10,39 @@
             ]
         },
         {
-            "title": "Fellowships & Scholarships",
+            "title": "Grants & Fellowships",
             "entries": [
-                ["University of California, Santa Barbara", "", "", "left", false],
-                ["Regents Fellowship in English", "2024 - 2029", "", "", true],
-                ["Yvonne Gartrell Award", "Fall 2024", "", "", true],
-                ["University of Miami", "", "", "left", false],
-                ["'Canes Achievement Award", "2020 - 2024", "", "", true]
+                ["University of California, Santa Barbara", "", "", "left"],
+                ["Regents Fellowship in English", "2024 - 2029", "", "", "My Regents Fellowship in English includes two academic years of stipendiary support, one summer stipend, and three years of academic employment."],
+                ["Yvonne Gartrell Award", "Fall 2024", "", "", "My Yvonne Gartrell Award includes a supplementary stipend of $2,500."]
             ]
         },
         {
             "title": "Honors & Awards",
             "entries": [
-                ["University of Miami", "", "", "left", false],
-                ["Departmental Honors in English", "2023", "for undergraduate honors thesis", "", true],
-                ["Robert M. Healy Award", "2022", "for best undergraduate essay in the humanities", "", true]
+                ["University of Miami", "", "", "left", ""],
+                ["Departmental Honors in English", "2023", "for undergraduate honors thesis", "", "I received departmental honors for my thesis \"Drama, Life, and Stephen Dedalus: The Fate of Aestheticism in Joyce\", in which I present Joyce's career as a process of growing disillusionment with the idea that aesthetic writing is capable of transcending its historical and material confines."],
+                ["Robert M. Healy Award", "2022", "for best undergraduate essay in the humanities", "", "I received the Healy Award for my paper \"Portrait of What, Exactly? Metonymic Contrast and Authorial Discontent in Joyce's A Portrait\", an analysis of Stephen Dedalus's aesthetic theories that understands their deficiencies as the completion of the novel's metonymic project."]
             ]
         },
         {
             "title": "Research",
             "entries": [
-                ["Critical Machine Learning Studies", "", "UCSB English", "left", false],
-                ["Graduate Research Assistant", "2024 - present", "", "", true],
-                ["Lindsay Thomas", "", "University of Miami", "left", false],
-                ["Undergraduate Research Assistant", "2022", "", "", true]
+                ["Critical Machine Learning Studies", "", "UCSB English", "left", ""],
+                ["Graduate Research Assistant", "2024 - present", "", "", "In collaboration with PIs Fabian Offert and Rita Raley, I am building web-based tools for the UCHRI-funded Critical Machine Learning Studies initiative at UCSB."],
+                ["Lindsay Thomas", "", "University of Miami", "left", ""],
+                ["Undergraduate Research Assistant", "2022", "", "", "As a research assistant for Lindsay Thomas, I developed applications in scientific Python for analysis of a large corpus of literary texts on HathiTrust and created command-line tools to help researchers in the humanities with classification of poorly structured data. I also wrote scripts to scrape information from social media platforms like TikTok in compliance with restrictive guidelines on automated access."]
             ]
         },
         {
             "title": "Select Technical Experience",
             "entries": [
-                ["Dexcom Continuous Glucose Monitoring", "", "", "left", false],
-                ["Software Validation & Verification Intern", "Summer 2023", "", "", true],
-                ["Harmelin Media", "", "", "left", false],
-                ["Software Engineer", "2020-2021", "", "", true],
-                ["University of Pennsylvania Health System", "", "", "left", false],
-                ["Data Science Intern", "Summer 2019", "", "", true]
+                ["Dexcom Continuous Glucose Monitoring", "", "", "left", ""],
+                ["Software Validation & Verification Intern", "Summer 2023", "", "", "As an intern for DexCom, I automated critical elements of software testing infrastructure using Java, Kotlin, and JUnit by creating convenient interfaces for remote device interaction. I refactored existing code to support parallel testing on multiple devices through Github actions."],
+                ["Harmelin Media", "", "", "left", ""],
+                ["Software Engineer", "2020-2021", "", "", "As a software engineer, I built a custom self-managed deployment of the Elastic Stack (formerly the ELK stack) on Amazon Web Services to support full-text search as well as log aggregation, indexing, and data visualization of intranet activity. I streamlined continuous integration/continuous delivery flows using Python and CodeDeploy to deploy applications on EC2."],
+                ["University of Pennsylvania Health System", "", "", "left", ""],
+                ["Data Science Intern", "Summer 2019", "", "", "As a data science intern, I created a Jupyter-based application for monitoring predictive model degradation. I leveraged libraries like scikit-learn, pandas, and matplotlib to diagnose potential weak points in existing models and guide the development of new models. I successfully containerized and integrated the system into the team's developer intranet frontend."]
             ]
         }
     ]

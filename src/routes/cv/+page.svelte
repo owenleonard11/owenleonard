@@ -41,7 +41,7 @@
                     {#if entry.side}
                         <button 
                             on:click={() => setEntryVisible(entry.uid)} 
-                            class="grid grid-cols-subgrid col-span-4 hover:shadow-lg {entryVisible == entry.uid ? "bg-warning-300" : ""}">
+                            class="grid grid-cols-subgrid col-span-4 hover:shadow-lg {entryVisible == entry.uid ? "bg-warning-300 shadow-lg" : ""}">
                             <div class="justify-self-start col-span-3 w-full rounded-sm text-left" >
                                 <p class={entry.bold == "left" ? "font-bold" : ""}>
                                     {entry.left}
