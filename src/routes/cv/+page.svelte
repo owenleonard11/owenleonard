@@ -36,11 +36,11 @@
         </CVSection>
         <CVSection id="research" title="Research">
             <CVEntry left="University of Miami" right="" bold="left" />
-            <CVEntry left="Undergraduate Research Assistant in Digital Humanities" right="Spring - Fall 2022" hoverShadow />
+            <CVEntry left="Undergraduate Research Assistant in Digital Humanities" right="2022" hoverShadow />
         </CVSection>
         <CVSection id="experience" title="Select Technical Experience">
-            <CVEntry left="DexCom Continuous Glucose Monitoring" right="Summer 2023" bold="left" />
-            <CVEntry left="Software Validation & Verification Intern" right="" hoverShadow />
+            <CVEntry left="DexCom Continuous Glucose Monitoring" bold="left" />
+            <CVEntry left="Software Validation & Verification Intern" right="Summer 2023" hoverShadow />
             <CVEntry left="Harmelin Media" right="" bold="left" />
             <CVEntry left="Software Engineer" right="2020 - 2021" hoverShadow />
             <CVEntry left="University of Pennsylvania Health System" right="" bold="left" />
