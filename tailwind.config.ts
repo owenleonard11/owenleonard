@@ -14,7 +14,8 @@ export default {
 				'4': '4px'
 			},
 			height: {
-				'128': '32rem'
+				'128': '32rem',
+				'80dvh': '80dvh'
 			},
 			width: {
 				'128': '32rem'
