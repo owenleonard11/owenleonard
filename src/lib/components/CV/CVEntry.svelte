@@ -4,10 +4,12 @@
     export let bold:  string = "";
 </script>
 
-<div class="flex flex-row justify-between">
+<div class="justify-self-start col-span-2">
     <p class={bold == "left" ? "font-bold" : ""}>
         {left}
         <slot />
     </p>
+</div>
+<div class="justify-self-end">
     <p class={bold == "right" ? "font-bold" : ""}>{right}</p>
 </div>
