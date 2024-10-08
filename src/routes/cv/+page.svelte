@@ -13,46 +13,45 @@
         </p>
         <hr class="mt-2"/>
         <CVSection id="education" title="Education">
-            <CVEntry left="University of California, Santa Barbara" right="" bold="left" />
-            <CVEntry left="PhD Student, Department of English" right="2024 - present" /> 
+            <CVEntry left="University of California, Santa Barbara" bold="left" />
+            <CVEntry left="PhD Student, Department of English" right="2024 - present" hoverShadow /> 
             <CVEntry left="University of Miami" right="" bold="left" />
-            <CVEntry left="B.S. in Computer Science and English" right="2020 - 2023" /> 
+            <CVEntry left="B.S. in Computer Science and English" right="2020 - 2023" hoverShadow /> 
         </CVSection>
         <CVSection id="fellowships" title="Fellowships & Scholarships">
             <CVEntry left="University of California, Santa Barbara" bold="left" />
-            <CVEntry left="Regents Fellowship in English" right="2024-2029" />
-            <CVEntry left="Yvonne Gartrell Award" right="Fall 2024" />
+            <CVEntry left="Regents Fellowship in English" right="2024-2029" hoverShadow />
+            <CVEntry left="Yvonne Gartrell Award" right="Fall 2024" hoverShadow />
             <CVEntry left="University of Miami" bold="left" />
-            <CVEntry left="'Canes Achievement Award" right="2020 - 2024" />
+            <CVEntry left="'Canes Achievement Award" right="2020 - 2024" hoverShadow />
         </CVSection>
         <CVSection id="honors" title="Honor & Awards">
             <CVEntry left="University of Miami" bold="left" />
-            <CVEntry left="Departmental Honors in English" right="2023">
+            <CVEntry left="Departmental Honors in English" right="2023" hoverShadow >
                 <span class="text-slate-700 ml-2 text-sm">for undergraduate honors thesis</span>
             </CVEntry>
-            <CVEntry left="Robert M. Healy Award" right="2022">
+            <CVEntry left="Robert M. Healy Award" right="2022" hoverShadow >
                 <span class="text-slate-700 ml-2 text-sm">for best undergraduate essay in the humanities</span>
             </CVEntry>
         </CVSection>
         <CVSection id="research" title="Research">
             <CVEntry left="University of Miami" right="" bold="left" />
-            <CVEntry left="Undergraduate Research Assistant in Digital Humanities" right="Spring - Fall 2022"/>
+            <CVEntry left="Undergraduate Research Assistant in Digital Humanities" right="Spring - Fall 2022" hoverShadow />
         </CVSection>
         <CVSection id="experience" title="Select Technical Experience">
             <CVEntry left="DexCom Continuous Glucose Monitoring" right="Summer 2023" bold="left" />
-            <CVEntry left="Software Validation & Verification Intern" right="" />
+            <CVEntry left="Software Validation & Verification Intern" right="" hoverShadow />
             <CVEntry left="Harmelin Media" right="" bold="left" />
-            <CVEntry left="Software Engineer" right="2020 - 2021" />
+            <CVEntry left="Software Engineer" right="2020 - 2021" hoverShadow />
             <CVEntry left="University of Pennsylvania Health System" right="" bold="left" />
-            <CVEntry left="Data Science Intern" right="Summer 2019" />
+            <CVEntry left="Data Science Intern" right="Summer 2019" hoverShadow />
         </CVSection>
     </div>
     <div>
-        <div class="card p-4 m-8 ml-0 text-l max-w-3xl rounded-lg">
+        <div class="card p-4 m-8 ml-0 text-l max-w-2xl rounded-lg">
             You're looking at my <span class="font-bold">interactive online CV</span>, last updated 8 October 2024.
-            Click on a subsection for additional information.
+            Click on an entry for additional information.
             If you'd prefer a PDF, you can <a href="cv" class="anchor" download>click here to download</a>.
         </div>
     </div>
 </div>
-    
