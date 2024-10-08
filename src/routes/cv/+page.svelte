@@ -1,5 +1,6 @@
 <script lang="ts">
     import * as cv from "$lib/text/cv.json";
+    import { fly, slide } from "svelte/transition";
 
     let id: number = 0;
     let sections = cv.sections.map((section) => {
@@ -40,7 +41,7 @@
                     {#if entry.side}
                         <button 
                             on:click={() => setEntryVisible(entry.uid)} 
-                            class="contents {entry.side ? "[&>*]:hover:shadow-lg": ""}">
+                            class="grid grid-cols-subgrid col-span-4 hover:shadow-lg">
                             <div class="justify-self-start col-span-3 w-full rounded-sm text-left">
                                 <p class={entry.bold == "left" ? "font-bold" : ""}>
                                     {entry.left}
@@ -79,7 +80,7 @@
         {#each sections as section}
             {#each section.entries as entry}
                 {#if entry.uid == entryVisible}
-                    <div class="card p-4 mx-8 ml-0 max-w-2xl rounded-lg border-tertiary-600 border-2">
+                    <div transition:slide class="card p-4 mx-8 ml-0 max-w-2xl rounded-lg border-tertiary-600 border-2">
                         {entry.side}
                     </div>
                 {/if}
