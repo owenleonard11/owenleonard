@@ -3,7 +3,7 @@
     import CVEntry from "$lib/components/CV/CVEntry.svelte";
 </script>
 
-<div class="flex flex-row h-80dvh">
+<div class="flex flex-row h-[80dvh]">
     <div class="m-8 p-4 max-w-4xl h-full border-black border-2 rounded-md bg-warning-100 font-serif overflow-y-auto">
         <p class="text-4xl font-bold">Owen Leonard</p>
         <p class="text-lg text-slate-700">
