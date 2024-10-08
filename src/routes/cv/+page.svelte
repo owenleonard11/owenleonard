@@ -1,7 +1,4 @@
 <script lang="ts">
-    import CVSection from "$lib/components/CV/CVSection.svelte";
-    import CVEntry from "$lib/components/CV/CVEntry.svelte";
-
     import * as cv from "$lib/text/cv.json";
 </script>
 
