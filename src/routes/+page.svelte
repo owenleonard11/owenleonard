@@ -11,7 +11,7 @@
 	</div>
 
 	<div class="flex flex-row flex-wrap justify-center">
-		<HomeCard href="/projects" text="read my writing">
+		<HomeCard href="/projects" text="read my writing" bg="warning-100">
 			<div class="mx-8 mt-8 p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-warning-100">
 				<div class="p-4 space-y-4">
 					<div class="grid grid-cols-3 gap-8">
@@ -31,7 +31,7 @@
 				</div>
 			</div>
 		</HomeCard>
-		<HomeCard href="/projects" text="check out my code">
+		<HomeCard href="/projects" text="check out my code" bg="surface-900">
 			<div class="mx-8 mt-8 p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-surface-700">
 				<div class="p-4 space-y-4">
 					<div class="grid grid-cols-8 gap-2">
@@ -57,23 +57,30 @@
 						<div class="placeholder bg-error-400 col-span-2" />
 					</div>
 				</div>
-			</div>
+			<div />
 		</HomeCard>
-		<HomeCard href="/contact" text="get in touch">
+		<HomeCard href="/cv" text="explore my CV" bg="warning-100">
 			<div class="mx-8 mt-8 p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-warning-100">
 				<div class="p-4 space-y-4">
-					<div class="grid grid-cols-3 gap-8">
-						<div class="placeholder-circle w-14 bg-tertiary-700" />
-					</div>
-					<div class="grid grid-cols-4 gap-4">
-						<div />
-						<div class="placeholder bg-tertiary-700 col-span-2" />
-						<div />
-					</div>
 					<div class="grid grid-cols-5 gap-4">
 						<div />
-						<div class="placeholder bg-tertiary-700 col-span-3" />
+						<div class="placeholder bg-tertiary-900 col-span-3" />
 						<div />
+					</div>
+					<div class="grid grid-cols-7 gap-4">
+						<div class="col-span-2" />
+						<div class="placeholder bg-tertiary-700 col-span-3" />
+						<div class="col-span-2" />
+					</div>
+					<div class="grid grid-cols-8 gap-4">
+						<div class="placeholder bg-tertiary-700" />
+						<div class="placeholder bg-tertiary-900 col-span-2" />
+						<div class="placeholder bg-tertiary-700 col-span-4"/>
+					</div>
+					<div class="grid grid-cols-8 gap-4">
+						<div class="placeholder bg-tertiary-700" />
+						<div class="placeholder bg-tertiary-900 col-span-2" />
+						<div class="placeholder bg-tertiary-700 col-span-4"/>
 					</div>
 				</div>
 			</div>

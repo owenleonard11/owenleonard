@@ -4,7 +4,7 @@
 
 <div class="flex flex-row m-16 mt-24">
     <div class="mr-8">
-        <OwenIcon classes="h-128 w-128 stroke-4"/>
+        <OwenIcon classes="h-[32rem] w-[32rem] stroke-[4px]"/>
         <div class="mt-4 text-center w-128 text-lg px-4">
             after Constantin Brancusi's 
             <em>

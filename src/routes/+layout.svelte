@@ -14,7 +14,7 @@
 
 <div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-4 text-white shadow-2xl flex flex-row flex-wrap">
 	<div class="flex items-center mr-auto">
-		<OwenIcon classes="stroke-12 h-12 w-12"/>
+		<OwenIcon classes="stroke-[12px] h-12 w-12"/>
 		<h2 class="h2 ml-1">owenleonard.dev</h2>
 	</div>
 	<div class="flex justify-center font-bold flex-wrap">
