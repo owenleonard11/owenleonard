@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex flex-row">
-    <div class="m-8 p-4 max-w-5xl border-black border-2 rounded-md bg-warning-100 font-serif">
+    <div class="m-8 p-4 max-w-3xl border-black border-2 rounded-md bg-warning-100 font-serif">
         <p class="text-4xl font-bold">Owen Leonard</p>
         <p class="text-xl text-slate-700">
             <a class="hover:anchor" href="mailto:owenleonard@ucsb.edu">owenleonard@ucsb.edu</a>
@@ -48,10 +48,10 @@
         </CVSection>
     </div>
     <div>
-        <div class="card p-4 m-8 ml-0 text-l max-w-5xl">
+        <div class="card p-4 m-8 ml-0 text-l max-w-3xl">
             You're looking at my <span class="font-bold">interactive online CV</span>, last updated 8 October 2024.
-            If you'd prefer, you can <a href="$lib/images/arches.png" class="anchor" download>download a PDF</a>.
-            
+            Click on a subsection for additional information.
+            If you'd prefer a PDF, you can <a href="cv" class="anchor" download>click here to download</a>.
         </div>
     </div>
 </div>

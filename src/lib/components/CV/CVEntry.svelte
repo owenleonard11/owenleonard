@@ -4,7 +4,7 @@
     export let bold:  string = "";
 </script>
 
-<div class="justify-self-start col-span-2">
+<div class="justify-self-start col-span-3">
     <p class={bold == "left" ? "font-bold" : ""}>
         {left}
         <slot />

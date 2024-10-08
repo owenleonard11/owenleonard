@@ -3,10 +3,7 @@
     export let title: string;
 </script>
 
-<div id="{id}" class="mt-2 grid grid-cols-3">
-    <div>
-        <p class="text-xl font-bold">{title}</p>
-    </div>
-    <div />
+<p class="text-xl font-bold mt-2">{title}</p>
+<div id="{id}" class="grid grid-cols-4 gap-x-4">
     <slot />
 </div>
