@@ -55,7 +55,7 @@
 				</div>
 			</div>
 		</HomeCard>
-		<HomeCard href="/cv" text="download my CV" bg="warning-100">
+		<HomeCard href="/cv" text="explore my CV" bg="warning-100">
 			<div class="p-4 space-y-4">
 				<div class="grid grid-cols-5 gap-4">
 					<div />
