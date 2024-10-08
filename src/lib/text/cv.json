@@ -3,10 +3,10 @@
         {
             "title": "Education",
             "entries": [
-                ["University of California, Santa Barbara", "", "", "left", false],
-                ["PhD Student, Department of English", "20204 - present", "", "", true],
-                ["University of Miami", "", "", "left", false],
-                ["B.S. in Computer Science and English", "2020 - 2024", "", "", true]
+                ["University of California, Santa Barbara", "", "", "left", ""],
+                ["PhD Student, Department of English", "2024 - present", "", "", "As a PhD student at the University of California, Santa Barbara, I study critical AI and critical machine learning, computational methods and the archive, and twentieth-century modernism and its implications for the digital present."],
+                ["University of Miami", "", "", "left", ""],
+                ["B.S. in Computer Science and English", "2020 - 2024", "", "", "I graduated from the University of Miami in 2024 with a B.S. in Computer Science with an additional major in English Literature."]
             ]
         },
         {
