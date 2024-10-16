@@ -1,0 +1,21 @@
+name: Update CV JSON
+
+on:
+  push:
+    branches: 'main'
+    paths: 'src/lib/text/cv.md'
+
+jobs:
+  build-cv-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v4
+      
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      
+      - name: Run script
+        run: python scripts/update_cv_json.py
