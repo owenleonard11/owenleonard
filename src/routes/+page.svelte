@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts"> 
 	import HomeCard from "$lib/components/HomeCard.svelte";
 </script>
 
@@ -59,7 +59,7 @@
 				</div>
 			<div />
 		</HomeCard>
-		<HomeCard href="/cv" text="explore my CV" bg="warning-100">
+		<HomeCard href="/cv" text="view my CV" bg="warning-100">
 			<div class="mx-8 mt-8 p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-warning-100">
 				<div class="p-4 space-y-4">
 					<div class="grid grid-cols-5 gap-4">
