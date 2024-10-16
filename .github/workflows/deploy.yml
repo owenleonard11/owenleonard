@@ -22,7 +22,7 @@ jobs:
           python-version: 3.9
       
       - name: Update cv.json
-        run: python src/lib/text/update_cv_json.py
+        run: python scripts/update_cv_json.py
 
       - name: Setup node
         uses: actions/setup-node@v4
