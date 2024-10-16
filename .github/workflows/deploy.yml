@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check for cv changes
-      - uses: actions/checkout@v4
-      - uses: dorny/paths-filter@v3
+        uses: actions/checkout@v4
+        uses: dorny/paths-filter@v3
         id: check-cv
         with:
           filters:
