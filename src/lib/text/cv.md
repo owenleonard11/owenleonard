@@ -1,1 +1,0 @@
-/home/owen/Documents/rhizome/personal/cv.md
