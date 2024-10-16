@@ -16,7 +16,8 @@ jobs:
         id: check-cv
         with:
           filters: |
-            cv: 'src/lib/text/cv.md'
+            cv: 
+            - 'src/lib/text/cv.md'
 
       - name: Checkout repo content
         uses: actions/checkout@v4
@@ -53,7 +54,7 @@ jobs:
           path: 'build/'
   
   deploy:
-    needs: build_site
+    needs: build-site
     runs-on: ubuntu-latest
 
     permissions:
