@@ -45,5 +45,5 @@ with open('src/lib/text/cv.md') as md:
         else:
             raise ValueError(f'Unexpected line start character: {line[0]}')
 
-with open('src/lib/text/cv.json') as json_file:
+with open('src/lib/text/cv.json', 'w') as json_file:
     dump(json, json_file, indent=2, separators=(',',': '))

@@ -35,9 +35,7 @@ jobs:
       
       - name: Run script
         if: steps.check-cv.outputs.cv == 'true'
-        run: |
-          sudo chmod u+w src/lib/text/update_cv_json.py
-          sudo python src/lib/text/update_cv_json.py
+        run: python src/lib/text/update_cv_json.py
 
   build-site:
     needs: update-cv-json
