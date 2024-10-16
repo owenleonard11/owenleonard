@@ -15,7 +15,7 @@ jobs:
         uses: dorny/paths-filter@v3
         id: check-cv
         with:
-          filters:
+          filters: |
             cv: 'src/lib/text/cv.md'
 
       - name: Checkout repo content
