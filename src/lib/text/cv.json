@@ -1,49 +1,189 @@
 {
-    "sections": [
+  "sections": [
+    {
+      "title": "Education",
+      "entries": [
         {
-            "title": "Education",
-            "entries": [
-                ["University of California, Santa Barbara", "", "", "left", ""],
-                ["PhD Student, Department of English", "2024 - present", "", "", "As a PhD student at the University of California, Santa Barbara, I study critical AI and critical machine learning, computational methods and the archive, and twentieth-century modernism and its implications for the digital present."],
-                ["University of Miami", "", "", "left", ""],
-                ["B.S. in Computer Science and English", "2020 - 2024", "", "", "I graduated from the University of Miami in 2024 with a B.S. in Computer Science with an additional major in English Literature."]
-            ]
+          "uid": 0,
+          "left": "University of California, Santa Barbara",
+          "right": "",
+          "alt": "",
+          "bold": "left",
+          "side": ""
         },
         {
-            "title": "Grants & Fellowships",
-            "entries": [
-                ["University of California, Santa Barbara", "", "", "left"],
-                ["Regents Fellowship in English", "2024 - 2029", "", "", "My Regents Fellowship in English includes two academic years of stipendiary support, one summer stipend, and three years of academic employment."],
-                ["Yvonne Gartrell Award", "Fall 2024", "", "", "My Yvonne Gartrell Award includes a supplementary stipend of $2,500."]
-            ]
+          "uid": 1,
+          "left": "PhD Student, Department of English",
+          "right": "2024 -",
+          "alt": "",
+          "bold": "",
+          "side": "As a PhD student at the University of California, Santa Barbara, I study critical AI and critical machine learning, computational methods and the archive, and twentieth-century modernism and its implications for the digital present."
         },
         {
-            "title": "Honors & Awards",
-            "entries": [
-                ["University of Miami", "", "", "left", ""],
-                ["Departmental Honors in English", "2023", "for undergraduate honors thesis", "", "I received departmental honors for my thesis \"Drama, Life, and Stephen Dedalus: The Fate of Aestheticism in Joyce\", in which I present Joyce's career as a process of growing disillusionment with the idea that aesthetic writing is capable of transcending its historical and material confines."],
-                ["Robert M. Healy Award", "2022", "for best undergraduate essay in the humanities", "", "I received the Healy Award for my paper \"Portrait of What, Exactly? Metonymic Contrast and Authorial Discontent in Joyce's A Portrait\", an analysis of Stephen Dedalus's aesthetic theories that understands their deficiencies as the completion of the novel's metonymic project."]
-            ]
+          "uid": 2,
+          "left": "University of Miami",
+          "right": "",
+          "alt": "",
+          "bold": "left",
+          "side": ""
         },
         {
-            "title": "Research",
-            "entries": [
-                ["Critical Machine Learning Studies", "", "UCSB English", "left", ""],
-                ["Graduate Research Assistant", "2024 - present", "", "", "In collaboration with PIs Fabian Offert and Rita Raley, I am building web-based tools for the UCHRI-funded Critical Machine Learning Studies initiative at UCSB."],
-                ["Lindsay Thomas", "", "University of Miami", "left", ""],
-                ["Undergraduate Research Assistant", "2022", "", "", "As a research assistant for Lindsay Thomas, I developed applications in scientific Python for analysis of a large corpus of literary texts on HathiTrust and created command-line tools to help researchers in the humanities with classification of poorly structured data. I also wrote scripts to scrape information from social media platforms like TikTok in compliance with restrictive guidelines on automated access."]
-            ]
-        },
-        {
-            "title": "Select Technical Experience",
-            "entries": [
-                ["Dexcom Continuous Glucose Monitoring", "", "", "left", ""],
-                ["Software Validation & Verification Intern", "Summer 2023", "", "", "As an intern for DexCom, I automated critical elements of software testing infrastructure using Java, Kotlin, and JUnit by creating convenient interfaces for remote device interaction. I refactored existing code to support parallel testing on multiple devices through Github actions."],
-                ["Harmelin Media", "", "", "left", ""],
-                ["Software Engineer", "2020-2021", "", "", "As a software engineer, I built a custom self-managed deployment of the Elastic Stack (formerly the ELK stack) on Amazon Web Services to support full-text search as well as log aggregation, indexing, and data visualization of intranet activity. I streamlined continuous integration/continuous delivery flows using Python and CodeDeploy to deploy applications on EC2."],
-                ["University of Pennsylvania Health System", "", "", "left", ""],
-                ["Data Science Intern", "Summer 2019", "", "", "As a data science intern, I created a Jupyter-based application for monitoring predictive model degradation. I leveraged libraries like scikit-learn, pandas, and matplotlib to diagnose potential weak points in existing models and guide the development of new models. I successfully containerized and integrated the system into the team's developer intranet frontend."]
-            ]
+          "uid": 3,
+          "left": "B.S. in Computer Science and English",
+          "right": "2020 - 2024",
+          "alt": "",
+          "bold": "",
+          "side": "I graduated from the University of Miami in 2024 with a B.S. in Computer Science with an additional major in English Literature."
         }
-    ]
+      ]
+    },
+    {
+      "title": "Grants & Fellowships",
+      "entries": [
+        {
+          "uid": 4,
+          "left": "University of California, Santa Barbara",
+          "right": "",
+          "alt": "",
+          "bold": "left",
+          "side": ""
+        },
+        {
+          "uid": 5,
+          "left": "Regents Fellowship in English",
+          "right": "2024 - 2029",
+          "alt": "",
+          "bold": "",
+          "side": "My Regents Fellowship in English includes two academic years of stipendiary support, one summer stipend, and three years of academic employment."
+        },
+        {
+          "uid": 6,
+          "left": "Yvonne Gartrell Award",
+          "right": "Fall 2024",
+          "alt": "",
+          "bold": "",
+          "side": "My Yvonne Gartrell Award includes a supplementary stipend of $2,500."
+        }
+      ]
+    },
+    {
+      "title": "Honors & Awards",
+      "entries": [
+        {
+          "uid": 7,
+          "left": "University of Miami",
+          "right": "",
+          "alt": "",
+          "bold": "left",
+          "side": ""
+        },
+        {
+          "uid": 8,
+          "left": "Departmental Honors in English",
+          "right": "2023",
+          "alt": "for undergraduate honors thesis",
+          "bold": "",
+          "side": "I received departmental honors for my thesis \"Drama, Life, and Stephen Dedalus: The Fate of Aestheticism in Joyce\", in which I present Joyce's career as a process of growing disillusionment with the idea that aesthetic writing is capable of transcending its historical and material confines."
+        },
+        {
+          "uid": 9,
+          "left": "Robert M. Healy Award",
+          "right": "2022",
+          "alt": "for best undergraduate essay in the humanities",
+          "bold": "",
+          "side": "I received the Healy Award for my paper \"Portrait of What, Exactly? Metonymic Contrast and Authorial Discontent in Joyce's A Portrait\", an analysis of Stephen Dedalus's aesthetic theories that understands their deficiencies as the completion of the novel's metonymic project."
+        }
+      ]
+    },
+    {
+      "title": "Research",
+      "entries": [
+        {
+          "uid": 10,
+          "left": "Critical Machine Learning Studies",
+          "right": "",
+          "alt": "UCSB English",
+          "bold": "left",
+          "side": ""
+        },
+        {
+          "uid": 11,
+          "left": "Graduate Research Assistant",
+          "right": "2024 -",
+          "alt": "",
+          "bold": "",
+          "side": "In collaboration with PIs Fabian Offert and Rita Raley, I am building web-based tools for the UCHRI-funded Critical Machine Learning Studies initiative at UCSB."
+        },
+        {
+          "uid": 12,
+          "left": "Lindsay Thomas",
+          "right": "",
+          "alt": "University of Miami",
+          "bold": "left",
+          "side": ""
+        },
+        {
+          "uid": 13,
+          "left": "Undergraduate Research Assistant",
+          "right": "2022",
+          "alt": "",
+          "bold": "",
+          "side": "As a research assistant for Lindsay Thomas, I developed applications in scientific Python for analysis of a large corpus of literary texts on HathiTrust and created command-line tools to help researchers in the humanities with classification of poorly structured data. I also wrote scripts to scrape information from social media platforms like TikTok in compliance with restrictive guidelines on automated access."
+        }
+      ]
+    },
+    {
+      "title": "Select Technical Experience",
+      "entries": [
+        {
+          "uid": 14,
+          "left": "Dexcom Continuous Glucose Monitoring",
+          "right": "",
+          "alt": "",
+          "bold": "left",
+          "side": ""
+        },
+        {
+          "uid": 15,
+          "left": "Software Validation & Verification Intern",
+          "right": "Summer 2023",
+          "alt": "",
+          "bold": "",
+          "side": "As an intern for DexCom, I automated critical elements of software testing infrastructure using Java, Kotlin, and JUnit by creating convenient interfaces for remote device interaction. I refactored existing code to support parallel testing on multiple devices through Github actions."
+        },
+        {
+          "uid": 16,
+          "left": "Harmelin Media",
+          "right": "",
+          "alt": "",
+          "bold": "left",
+          "side": ""
+        },
+        {
+          "uid": 17,
+          "left": "Harmelin Media",
+          "right": "2020 - 2021",
+          "alt": "",
+          "bold": "",
+          "side": "As a software engineer, I built a custom self-managed deployment of the Elastic Stack (formerly the ELK stack) on Amazon Web Services to support full-text search as well as log aggregation, indexing, and data visualization of intranet activity. I streamlined continuous integration/continuous delivery flows using Python and CodeDeploy to deploy applications on EC2."
+        },
+        {
+          "uid": 18,
+          "left": "University of Pennsylvania Health System",
+          "right": "",
+          "alt": "",
+          "bold": "left",
+          "side": ""
+        },
+        {
+          "uid": 19,
+          "left": "Data Science Intern",
+          "right": "Summer 2019",
+          "alt": "",
+          "bold": "",
+          "side": "As a data science intern, I created a Jupyter-based application for monitoring predictive model degradation. I leveraged libraries like scikit-learn, pandas, and matplotlib to diagnose potential weak points in existing models and guide the development of new models. I successfully containerized and integrated the system into the team's developer intranet frontend."
+        }
+      ]
+    }
+  ]
 }
