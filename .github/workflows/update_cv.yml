@@ -18,4 +18,4 @@ jobs:
           python-version: 3.9
       
       - name: Run script
-        run: python src/lib/text/update_cv_json.py
+        run: sudo python src/lib/text/update_cv_json.py
