@@ -41,8 +41,6 @@ jobs:
     needs: update-cv-json
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo content
-        uses: actions/checkout@v4
 
       - name: Setup node
         uses: actions/setup-node@v4
