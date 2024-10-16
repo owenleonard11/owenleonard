@@ -1,4 +1,4 @@
-# python 3.10+
+# tested on python 3.9, 3.10
 
 from os.path import dirname, join
 from json import dump
@@ -6,7 +6,7 @@ json = {
     'sections': []
 }
 
-with open(join(dirname(__file__), 'cv.md')) as md:
+with open(join(dirname(__file__), '../src/lib/text/cv.md')) as md:
     id = 0
     for line in md:
         if line[0] == '#':
@@ -46,5 +46,5 @@ with open(join(dirname(__file__), 'cv.md')) as md:
         else:
             raise ValueError(f'Unexpected line start character: {line[0]}')
 
-with open(join(dirname(__file__), 'cv.json'), 'w') as json_file:
+with open(join(dirname(__file__), '../src/lib/text/cv.json'), 'w') as json_file:
     dump(json, json_file, indent=2, separators=(',',': '))
