@@ -7,9 +7,8 @@ on:
 jobs:
   update-cv-json:
     runs-on: ubuntu-latest
-    outputs:
-      cv-update: ${{ steps.check-cv.outputs.cv }}
     steps:
+      - name: Check for cv changes
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
         id: check-cv
@@ -34,6 +33,9 @@ jobs:
     needs: update-cv-json
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v4
+
       - name: Setup node
         uses: actions/setup-node@v4
       
