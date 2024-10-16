@@ -1,6 +1,6 @@
 # Education
 ## University of California, Santa Barbara
-- PhD Student, Department of English | | 2024 - | As a PhD student at the University of California, Santa Barbara, I study critical AI and critical machine learning, the culture of computation, and twentieth-century modernism and its implications for the digital present.
+- PhD Student, Department of English | | 2024 - | As a PhD student at the University of California, Santa Barbara, I study critical AI and critical machine learning, the cultural logic of computation, and twentieth-century modernism and its implications for the digital present.
 ## University of Miami
 - B.S. in Computer Science and English | | 2020 - 2024 | I graduated from the University of Miami in 2024 with a B.S. in Computer Science with an additional major in English Literature.
 # Grants & Fellowships
