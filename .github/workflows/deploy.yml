@@ -8,8 +8,10 @@ jobs:
   update-cv-json:
     runs-on: ubuntu-latest
     steps:
-      - name: Check for cv changes
+      - name: Checkout repo content
         uses: actions/checkout@v4
+      
+      - name: Check for changes
         uses: dorny/paths-filter@v3
         id: check-cv
         with:
