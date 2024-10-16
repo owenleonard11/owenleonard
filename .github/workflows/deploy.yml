@@ -5,12 +5,35 @@ on:
     branches: 'main'
 
 jobs:
-  build_site:
+  update-cv-json:
+    runs-on: ubuntu-latest
+    outputs:
+      cv-update: ${{ steps.check-cv.outputs.cv }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: check-cv
+        with:
+          filters:
+            cv: 'src/lib/text/cv.md'
+
+      - name: Checkout repo content
+        uses: actions/checkout@v4
+      
+      - name: Setup python
+        if: steps.check-cv.outputs.cv == 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      
+      - name: Run script
+        if: steps.check-cv.outputs.cv == 'true'
+        run: sudo python src/lib/text/update_cv_json.py
+
+  build-site:
+    needs: update-cv-json
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Setup node
         uses: actions/setup-node@v4
       
