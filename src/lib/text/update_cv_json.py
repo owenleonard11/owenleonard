@@ -6,7 +6,7 @@ json = {
     'sections': []
 }
 
-with open(join(dirname(__file__), '../src/lib/text/cv.md')) as md:
+with open('cv.json') as md:
     id = 0
     for line in md:
         if line[0] == '#':
@@ -46,5 +46,5 @@ with open(join(dirname(__file__), '../src/lib/text/cv.md')) as md:
         else:
             raise ValueError(f'Unexpected line start character: {line[0]}')
 
-with open(join(dirname(__file__), '../src/lib/text/cv.json'), 'w') as json_file:
+with open('cv.json') as json_file:
     dump(json, json_file, indent=2, separators=(',',': '))
