@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents:
         write
-        
+
     steps:
       - name: Checkout repo content
         uses: actions/checkout@v4
@@ -35,7 +35,9 @@ jobs:
       
       - name: Run script
         if: steps.check-cv.outputs.cv == 'true'
-        run: sudo python src/lib/text/update_cv_json.py
+        run: |
+          sudo chmod u+w src/lib/text/update_cv_json.py
+          sudo python src/lib/text/update_cv_json.py
 
   build-site:
     needs: update-cv-json
