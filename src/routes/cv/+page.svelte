@@ -57,7 +57,7 @@
             You're looking at my <span class="font-bold">interactive online CV</span>, last updated 8 October 2024.
             Click on an entry for additional information.
             If you'd prefer a PDF, you can 
-            <a href="https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/cv.pdf" class="anchor" download>
+            <a href="https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/cv.pdf" class="anchor" download target="_blank">
                 click here to download
             </a>.
         </div>
