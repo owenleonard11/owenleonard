@@ -23,6 +23,9 @@ jobs:
       
       - name: Update cv.json
         run: python scripts/update_cv_json.py
+
+      - name: Update cv.tex
+        run: python scripts/update_cv_tex.py
       
       - name: Compile cv.pdf
         uses: xu-cheng/latex-action@v3
