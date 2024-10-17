@@ -41,7 +41,7 @@ jobs:
       
       - name: Sync cv.pdf to S3
         run: |
-          aws s3 sync cv.pdf s3://personal-site-assets
+          aws s3 cp cv.pdf s3://personal-site-assets/
 
       - name: Setup node
         uses: actions/setup-node@v4
