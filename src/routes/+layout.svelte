@@ -22,10 +22,10 @@
 </Drawer>
 
 <div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-2 md:p-4 text-white drop-shadow-2xl flex flex-row flex-wrap">
-	<div class="flex items-center mr-auto">
+	<a class="flex items-center mr-auto" href="{base}/">
 		<OwenIcon classes="stroke-[12px] h-8 w-8 md:h-10 md: w-10 lg:h-12 lg:w-12"/>
-		<h2 class="h2 ml-1">owenleonard.dev</h2>
-	</div>
+		<p class="h2 ml-1">owenleonard.dev</p>
+	</a>
 	<button class="btn lg:hidden" on:click={openDrawer}>
 		(ham)
 	</button>
