@@ -2,11 +2,15 @@
 	import '../app.postcss';
 	import { base } from '$app/paths';
 	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
+
+	import { Bars3, XCircle } from '@steeze-ui/heroicons';
+	import { Icon } from '@steeze-ui/svelte-icon';
     import OwenIcon from '$lib/components/OwenIcon.svelte';
 
 	initializeStores();
 	const drawerStore = getDrawerStore();
-	const openDrawer = () => { drawerStore.open(); }
+	const openDrawer =  () => { drawerStore.open();  }
+	const closeDrawer = () => { drawerStore.close(); }
 </script>
 
 <svelte:head>
@@ -17,17 +21,25 @@
 	<!-- <link rel="manifest" href="{base}/static/site.webmanifest" /> --->
 </svelte:head>
 
-<Drawer position="right" bgDrawer="bg-secondary-100" width="w-3/4 md:w-1/2">
-	Drawer!
+<Drawer position="right" bgDrawer="bg-secondary-100" width="w-[70vw]">
+	<div class='flex flex-row justify-between mt-4 mx-4'>
+		<div class='text-xl md:text-3xl font-bold'>Menu</div>
+		<button on:click={closeDrawer}>
+			<Icon src={XCircle} class='w-6 md:w-10'/>
+		</button>
+	</div>
+	<div class='mx-4 mt-1'>
+		<hr />
+	</div>
 </Drawer>
 
-<div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-2 md:p-4 text-white drop-shadow-2xl flex flex-row flex-wrap">
+<div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-2 text-white drop-shadow-2xl flex flex-row flex-wrap">
 	<a class="flex items-center mr-auto" href="{base}/">
-		<OwenIcon classes="stroke-[12px] h-8 w-8 md:h-10 md: w-10 lg:h-12 lg:w-12"/>
+		<OwenIcon classes="stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
 		<p class="h2 ml-1">owenleonard.dev</p>
 	</a>
 	<button class="btn lg:hidden" on:click={openDrawer}>
-		(ham)
+		<Icon src={Bars3} class='h-8 md:h-12'/>
 	</button>
 	<nav class="hidden lg:flex flex-row justify-center font-bold flex-wrap">
 		<ul>

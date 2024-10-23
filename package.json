@@ -12,6 +12,7 @@
   "devDependencies": {
     "@skeletonlabs/skeleton": "2.10.0",
     "@skeletonlabs/tw-plugin": "0.4.0",
+    "@steeze-ui/heroicons": "^2.4.0",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/adapter-static": "^3.0.5",
     "@sveltejs/kit": "^2.0.0",
@@ -31,6 +32,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@floating-ui/dom": "1.6.5"
+    "@floating-ui/dom": "1.6.5",
+    "@steeze-ui/svelte-icon": "^1.5.0"
   }
 }
