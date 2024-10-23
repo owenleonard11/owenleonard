@@ -2,15 +2,15 @@
 	import HomeCard from "$lib/components/HomeCard.svelte";
 </script>
 
-<div class="mx-16">
-	<div class="my-16">
-		<h1 class="text-8xl text-center">owen leonard</h1>
-		<div class="text-4xl font-extrabold ml-16 mt-4 text-center">
+<div class="mx-8 lg:mx-16">
+	<div class="text-center mt-16 mx-16">
+		<h1 class="text-6xl lg:text-8xl font-bold">owen leonard</h1>
+		<div class="text-3xl lg:text-4xl font-extrabold mt-4">
 			writing, programming, and cultural criticism
 		</div>
 	</div>
 
-	<div class="flex flex-row flex-wrap justify-center">
+	<div class="flex flex-row flex-wrap justify-center mt-8 lg:mt-16">
 		<HomeCard href="/projects" text="read my writing">
 			<div class="mx-8 mt-8 p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-warning-100">
 				<div class="p-4 space-y-4">
