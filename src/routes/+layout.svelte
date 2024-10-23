@@ -1,7 +1,12 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { base } from '$app/paths'
+	import { base } from '$app/paths';
+	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
     import OwenIcon from '$lib/components/OwenIcon.svelte';
+
+	initializeStores();
+	const drawerStore = getDrawerStore();
+	const openDrawer = () => { drawerStore.open(); }
 </script>
 
 <svelte:head>
@@ -12,18 +17,27 @@
 	<!-- <link rel="manifest" href="{base}/static/site.webmanifest" /> --->
 </svelte:head>
 
-<div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-4 text-white shadow-2xl flex flex-row flex-wrap">
+<Drawer position="right" bgDrawer="bg-secondary-100" width="w-3/4 md:w-1/2">
+	Drawer!
+</Drawer>
+
+<div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-2 md:p-4 text-white drop-shadow-2xl flex flex-row flex-wrap">
 	<div class="flex items-center mr-auto">
-		<OwenIcon classes="stroke-[12px] h-12 w-12"/>
+		<OwenIcon classes="stroke-[12px] h-8 w-8 md:h-10 md: w-10 lg:h-12 lg:w-12"/>
 		<h2 class="h2 ml-1">owenleonard.dev</h2>
 	</div>
-	<div class="flex justify-center font-bold flex-wrap">
-		<a href="{base}/" class="btn text-2xl">home</a>
-		<a href="{base}/projects" class="btn text-2xl">projects</a>
-		<a href="{base}/disjecta" class="btn text-2xl">disjecta</a>
-		<a href="{base}/contact" class="btn text-2xl">contact</a>
-		<a href="{base}/about" class="btn text-2xl">about</a>
-	</div>
+	<button class="btn lg:hidden" on:click={openDrawer}>
+		(ham)
+	</button>
+	<nav class="hidden lg:flex flex-row justify-center font-bold flex-wrap">
+		<ul>
+			<li class="inline-block"><a href="{base}/" class="btn text-2xl">home</a></li>
+			<li class="inline-block"><a href="{base}/projects" class="btn text-2xl">projects</a></li>
+			<li class="inline-block"><a href="{base}/disjecta" class="btn text-2xl">disjecta</a></li>
+			<li class="inline-block"><a href="{base}/contact" class="btn text-2xl">contact</a></li>
+			<li class="inline-block"><a href="{base}/about" class="btn text-2xl">about</a></li>
+		</ul>
+	</nav>
 </div>
 
 <slot />
