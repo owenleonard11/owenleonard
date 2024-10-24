@@ -30,22 +30,27 @@
 	</div>
 	<div class='mx-4 mt-1'>
 		<hr />
-		<nav class="font-bold flex flex-col">
-			<ul class="[&_a]:btn [&_a]:text-xl [&_a]:md:text-2xl [&_a]:mx-0 [&_a]:px-0">
+		<nav class="flex flex-col">
+			<ul class="[&_a]:btn [&_a]:text-xl [&_a]:md:text-2xl [&_a]:mx-0 [&_a]:p-0 [&_a]:font-bold [&_p]:pb-1">
 				<li>
-					<a href="{base}/">home →</a>
+					<a href="{base}/" on:click={closeDrawer}>home →</a>
+					<p>return home</p>
 				</li>
 				<li>
-					<a href="{base}/projects">projects →</a>
+					<a href="{base}/projects" on:click={closeDrawer}>projects →</a>
+					<p>see my work</p>
 				</li>
 				<li>
-					<a href="{base}/disjecta">disjecta →</a>
+					<a href="{base}/disjecta" on:click={closeDrawer}>disjecta →</a>
+					<p>read my blog</p>
 				</li>
 				<li>
-					<a href="{base}/contact">contact →</a>
+					<a href="{base}/contact" on:click={closeDrawer}>contact →</a>
+					<p>get in touch</p>
 				</li>
 				<li>
-					<a href="{base}/about">about →</a>
+					<a href="{base}/about" on:click={closeDrawer}>about →</a>
+					<p>find out more</p>
 				</li>
 			</ul>
 		</nav>
