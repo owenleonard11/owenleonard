@@ -13,7 +13,7 @@
             </a></em>
         </div>
     </div>
-    <div class="text-l md:text-xl xl:text-2xl col-span-2 mr-8">
+    <div class="md:text-xl xl:text-2xl col-span-2 mr-8">
         <p>
             Hi! I'm Owen Leonard, a PhD student at UC Santa Barbara. 
             My research interests include critical AI and critical machine learning, 

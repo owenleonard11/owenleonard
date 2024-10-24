@@ -6,8 +6,8 @@
     const setEntryVisible = (uid: number) => { entryVisible = uid; }
 </script>
 
-<div class="flex flex-row h-[80dvh]">
-    <div class="m-8 p-4 max-w-4xl h-full border-black border-2 rounded-md bg-warning-100 font-serif overflow-y-auto">
+<div class="flex flex-row">
+    <div class="m-8 p-4 w-[70dvw] max-w-2xl max-h-[80dvh] border-black border-2 rounded-md bg-warning-100 font-serif overflow-y-auto">
         <p class="text-4xl font-bold">Owen Leonard</p>
         <p class="text-lg text-slate-700">
             <a class="hover:anchor" href="mailto:owenleonard@ucsb.edu">owenleonard@ucsb.edu</a>
@@ -53,7 +53,7 @@
         {/each}
     </div>
     <div>
-        <div class="card p-4 m-8 ml-0 text-lg max-w-2xl rounded-lg">
+        <div class="card p-4 m-8 ml-0 w-[30vw] rounded-lg">
             You're looking at my <span class="font-bold">interactive online CV</span>, last updated 8 October 2024.
             Click on an entry for additional information.
             If you'd prefer a PDF, you can 
@@ -64,7 +64,7 @@
         {#each cv.sections as section}
             {#each section.entries as entry}
                 {#if entry.uid == entryVisible}
-                    <div transition:slide class="card p-4 mx-8 ml-0 max-w-2xl rounded-lg border-tertiary-600 border-2">
+                    <div transition:slide class="card p-4 mx-8 ml-0 w-[30vw] rounded-lg border-tertiary-600 border-2">
                         {entry.side}
                     </div>
                 {/if}
