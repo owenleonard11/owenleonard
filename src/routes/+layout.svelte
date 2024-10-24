@@ -21,7 +21,7 @@
 	<!-- <link rel="manifest" href="{base}/static/site.webmanifest" /> --->
 </svelte:head>
 
-<Drawer position="right" bgDrawer="bg-secondary-100" width="w-[70vw]">
+<Drawer position="right" bgDrawer="bg-secondary-100" width="w-48 md:w-72">
 	<div class='flex flex-row justify-between mt-4 mx-4'>
 		<div class='text-xl md:text-3xl font-bold'>Menu</div>
 		<button on:click={closeDrawer}>
