@@ -3,6 +3,7 @@
     import { slide } from "svelte/transition";
     import { getModalStore, getToastStore } from '@skeletonlabs/skeleton';
     import type { ToastSettings, ModalSettings, ModalComponent } from "@skeletonlabs/skeleton";
+    import { beforeNavigate } from "$app/navigation";
 
     import * as cv from "$lib/text/cv.json";
     import CvModal from "$lib/components/CVModal.svelte";
@@ -29,11 +30,13 @@
             instead.`,
             timeout: 20000
     }
+
     onMount(() => {
         if (innerWidth < 768) {
             toastStore.trigger(mobileWarningToast);
         }
     })
+    beforeNavigate(toastStore.clear)
 </script>
 
 <svelte:window bind:innerWidth />
