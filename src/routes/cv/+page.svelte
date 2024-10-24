@@ -1,7 +1,8 @@
 <script lang="ts">
+    import { onMount } from "svelte";
     import { slide } from "svelte/transition";
-    import { getModalStore } from '@skeletonlabs/skeleton';
-    import type { ModalSettings, ModalComponent, ModalStore } from "@skeletonlabs/skeleton";
+    import { getModalStore, getToastStore } from '@skeletonlabs/skeleton';
+    import type { ToastSettings, ModalSettings, ModalComponent } from "@skeletonlabs/skeleton";
 
     import * as cv from "$lib/text/cv.json";
     import CvModal from "$lib/components/CVModal.svelte";
@@ -20,6 +21,19 @@
         }
         return () => { modalStore.trigger(sideModal) }
     };
+
+    const toastStore = getToastStore();
+    const mobileWarningToast: ToastSettings = {
+        message: `Warning: This page is not designed to accomodate narrow screens. Consider 
+            <a href='https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/cv.pdf' class='anchor' download target='_blank'>downloading a PDF</a>
+            instead.`,
+            timeout: 20000
+    }
+    onMount(() => {
+        if (innerWidth < 768) {
+            toastStore.trigger(mobileWarningToast);
+        }
+    })
 </script>
 
 <svelte:window bind:innerWidth />

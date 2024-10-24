@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { base } from '$app/paths';
-	import { initializeStores, Modal, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
+	import { initializeStores, Toast, Modal, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 
 	import { Bars3, XCircle } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
@@ -20,6 +20,8 @@
 	<!-- <link rel="apple-touch-icon" sizes="180x180" href="{base}/static/apple-touch-icon.png" /> --->
 	<!-- <link rel="manifest" href="{base}/static/site.webmanifest" /> --->
 </svelte:head>
+
+<Toast background="variant-filled bg-warning"/>
 
 <Modal />
 
