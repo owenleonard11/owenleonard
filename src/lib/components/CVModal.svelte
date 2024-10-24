@@ -8,7 +8,7 @@
 </script>
 
 {#if $modalStore[0]}
-    <div class="card p-4 text-lg bg-secondary-100 w-modal flex flex-row justify-between align-center border-tertiary-600 border-2 rounded-md">
+    <div class="card p-4 text-sm md:text-lg bg-secondary-100 w-modal flex flex-row justify-between align-center border-tertiary-600 border-2 rounded-md">
         <div>{side}</div>
         <button on:click={() => modalStore.close()} class="ml-4">
 			<Icon src={ChevronDoubleDown} class='w-8'/>
