@@ -1,22 +1,22 @@
 <script lang="ts">
-    import * as cv from "$lib/text/cv.json";
     import { slide } from "svelte/transition";
-    
-    import { Modal, getModalStore } from '@skeletonlabs/skeleton';
+    import { getModalStore } from '@skeletonlabs/skeleton';
     import type { ModalSettings, ModalComponent, ModalStore } from "@skeletonlabs/skeleton";
+
+    import * as cv from "$lib/text/cv.json";
+    import CvModal from "$lib/components/CVModal.svelte";
 
     let innerWidth=0;
 
     let entryVisible: number = -1; 
-    const setEntryVisible = (uid: any) => { return () => entryVisible = uid; }
+    const setEntryVisible = (uid: any) => { return () => entryVisible = uid; };
 
     const modalStore = getModalStore();
     const triggerSideModal = (side: any) => {
+        const modalComponent: ModalComponent = { ref: CvModal, props: { side: side}}
         const sideModal: ModalSettings = {
-            type: 'alert',
-            title: '',
-            body: side,
-            buttonTextCancel: 'close'
+            type: 'component',
+            component: modalComponent
         }
         return () => { modalStore.trigger(sideModal) }
     };
