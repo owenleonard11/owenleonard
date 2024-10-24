@@ -11,78 +11,66 @@
 	</div>
 
 	<div class="flex flex-row flex-wrap justify-center mt-4 md:mt-8">
-		<HomeCard href="/projects" text="read my writing">
-			<div class="mx-4 md:mx-8 mt-4 md:mt-8 md:p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-warning-100">
-				<div class="p-4 pb-1 md:pb-0 space-y-2 md:space-y-4">
-					<div class="grid grid-cols-3">
-						<div class="h-3 md:h-5 placeholder bg-surface-500" />
-					</div>
-					<div class="grid grid-cols-3">
-						<div class="h-3 md:h-5 placeholder bg-surface-500" />
-					</div>
-					<div class="grid grid-cols-3 gap-2 md:gap-4">
-						<div class="h-3 md:h-5 placeholder bg-surface-500 col-span-2" />
-						<div class="h-3 md:h-5 placeholder bg-surface-500" />
-					</div>
-					<div class="grid grid-cols-3 gap-2 md:gap-4">
-						<div class="h-3 md:h-5 placeholder bg-surface-500" />
-						<div class="h-3 md:h-5 placeholder bg-surface-500 col-span-2" />
-					</div>
-				</div>
+		<HomeCard href="/projects" text="read my writing" bg="bg-warning-100" classes="[&_div]:grid-cols-3">
+			<div>
+				<div class="bg-surface-500" />
+			</div>
+			<div>
+				<div class="bg-surface-500" />
+			</div>
+			<div class="gap-2 md:gap-4">
+				<div class="bg-surface-500 col-span-2" />
+				<div class="bg-surface-500" />
+			</div>
+			<div class="grid-cols-3 gap-2 md:gap-4">
+				<div class="bg-surface-500" />
+				<div class="bg-surface-500 col-span-2" />
 			</div>
 		</HomeCard>
-		<HomeCard href="/projects" text="check out my code">
-			<div class="mx-4 md:mx-8 mt-4 md:mt-8 md:p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-surface-700">
-				<div class="p-4 pb-1 md:pb-0 space-y-2 md:space-y-4">
-					<div class="grid grid-cols-8 gap-1 md:gap-2">
-						<div class="h-3 md:h-5 placeholder bg-warning-400" />
-						<div class="h-3 md:h-5 placeholder bg-primary-400 col-span-2"/>
-						<div class="h-3 md:h-5 placeholder bg-success-400" />
-						<div class="h-3 md:h-5 placeholder bg-success-400 col-span-2" />
-					</div>
-					<div class="grid grid-cols-8 gap-1 md:gap-2">
-						<div />
-						<div class="h-3 md:h-5 placeholder bg-error-400" />
-						<div class="h-3 md:h-5 placeholder bg-primary-400 col-span-2" />
-						<div class="h-3 md:h-5 placeholder bg-primary-400" />
-					</div>
-					<div class="grid grid-cols-8 gap-1 md:gap-2">
-						<div />
-						<div class="h-3 md:h-5 placeholder bg-success-400 col-span-2" />
-						<div class="h-3 md:h-5 placeholder bg-warning-400 col-span-2" />
-						<div class="h-3 md:h-5 placeholder bg-success-400" />
-					</div>
-					<div class="grid grid-cols-8 gap-1 md:gap-2">
-						<div class="h-3 md:h-5 placeholder bg-primary-400 col-span-2" />
-						<div class="h-3 md:h-5 placeholder bg-error-400 col-span-2" />
-					</div>
-				</div>
-			<div />
+		<HomeCard href="/projects" text="check out my code" bg="bg-surface-700">
+			<div class="grid grid-cols-8 gap-1 md:gap-2">
+				<div class="bg-warning-400" />
+				<div class="bg-primary-400 col-span-2"/>
+				<div class="bg-success-400" />
+				<div class="bg-success-400 col-span-2" />
+			</div>
+			<div class="grid grid-cols-8 gap-1 md:gap-2">
+				<div />
+				<div class="bg-error-400" />
+				<div class="bg-primary-400 col-span-2" />
+				<div class="bg-primary-400" />
+			</div>
+			<div class="grid grid-cols-8 gap-1 md:gap-2">
+				<div />
+				<div class="bg-success-400 col-span-2" />
+				<div class="bg-warning-400 col-span-2" />
+				<div class="bg-success-400" />
+			</div>
+			<div class="grid grid-cols-8 gap-1 md:gap-2">
+				<div class="bg-primary-400 col-span-2" />
+				<div class="bg-error-400 col-span-2" />
+			</div>
 		</HomeCard>
-		<HomeCard href="/cv" text="view my CV">
-			<div class="mx-4 md:mx-8 mt-4 md:mt-8 md:p-4 pb-0 border-black border-t-2 border-x-2 rounded-t-md bg-warning-100">
-				<div class="p-4 pb-1 md:pb-0 space-y-2 md:space-y-4">
-					<div class="grid grid-cols-5 gap-2 md:gap-4">
-						<div />
-						<div class="h-3 md:h-5 placeholder bg-tertiary-900 col-span-3" />
-						<div />
-					</div>
-					<div class="grid grid-cols-7 gap-2 md:gap-4">
-						<div class="col-span-2" />
-						<div class="h-3 md:h-5 placeholder bg-tertiary-700 col-span-3" />
-						<div class="col-span-2" />
-					</div>
-					<div class="grid grid-cols-8 gap-2">
-						<div class="h-3 md:h-5 placeholder bg-tertiary-700" />
-						<div class="h-3 md:h-5 placeholder bg-tertiary-900 col-span-2 md:mr-1" />
-						<div class="h-3 md:h-5 placeholder bg-tertiary-700 col-span-4"/>
-					</div>
-					<div class="grid grid-cols-8 gap-2">
-						<div class="h-3 md:h-5 placeholder bg-tertiary-700" />
-						<div class="h-3 md:h-5 placeholder bg-tertiary-900 col-span-2 md:mr-1" />
-						<div class="h-3 md:h-5 placeholder bg-tertiary-700 col-span-5"/>
-					</div>
-				</div>
+		<HomeCard href="/cv" text="view my CV" bg="bg-warning-100">
+			<div class="grid grid-cols-5 gap-2 md:gap-4">
+				<div />
+				<div class="bg-tertiary-900 col-span-3" />
+				<div />
+			</div>
+			<div class="grid grid-cols-7 gap-2 md:gap-4">
+				<div class="col-span-2" />
+				<div class="bg-tertiary-700 col-span-3" />
+				<div class="col-span-2" />
+			</div>
+			<div class="grid grid-cols-8 gap-2">
+				<div class="bg-tertiary-700" />
+				<div class="bg-tertiary-900 col-span-2 md:mr-1" />
+				<div class="bg-tertiary-700 col-span-4"/>
+			</div>
+			<div class="grid grid-cols-8 gap-2">
+				<div class="bg-tertiary-700" />
+				<div class="bg-tertiary-900 col-span-2 md:mr-1" />
+				<div class="bg-tertiary-700 col-span-5"/>
 			</div>
 		</HomeCard>
 	</div>
