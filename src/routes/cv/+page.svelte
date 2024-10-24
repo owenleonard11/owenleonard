@@ -24,12 +24,12 @@
                             on:click={() => setEntryVisible(entry.uid)} 
                             class="grid grid-cols-subgrid col-span-4 hover:shadow-lg {entryVisible == entry.uid ? "bg-warning-300 shadow-lg" : ""}">
                             <div class="justify-self-start col-span-3 w-full rounded-sm text-left" >
-                                <p class={entry.bold == "left" ? "font-bold" : ""}>
-                                    {entry.left}
+                                <div class={entry.bold == "left" ? "font-bold" : "flex flex-row flex-wrap"}>
+                                    <p class="text-nowrap mr-4">{entry.left}</p>
                                     {#if entry.alt}
-                                        <span class="text-slate-700 ml-2 text-sm">{entry.alt}</span>
+                                        <p class="mt-auto text-sm text-slate-700">{entry.alt}</p>
                                     {/if}
-                                </p>
+                                </div>
                             </div>
                             <div class="justify-self-end w-full text-right">
                                 <p class={entry.bold == "right" ? "font-bold" : ""}>{entry.right}</p>
@@ -37,12 +37,12 @@
                         </button>
                     {:else}
                     <div class="justify-self-start col-span-3 w-full rounded-sm text-left">
-                        <p class={entry.bold == "left" ? "font-bold" : ""}>
+                        <div class={entry.bold == "left" ? "font-bold" : ""}>
                             {entry.left}
                             {#if entry.alt}
                                 <span class="text-slate-700 ml-2 text-sm">{entry.alt}</span>
                             {/if}
-                        </p>
+                        </div>
                     </div>
                     <div class="justify-self-end w-full text-right">
                         <p class={entry.bold == "right" ? "font-bold" : ""}>{entry.right}</p>
