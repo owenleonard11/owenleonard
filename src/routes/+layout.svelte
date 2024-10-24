@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { base } from '$app/paths';
-	import { initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
+	import { initializeStores, Modal, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 
 	import { Bars3, XCircle } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
@@ -21,6 +21,8 @@
 	<!-- <link rel="manifest" href="{base}/static/site.webmanifest" /> --->
 </svelte:head>
 
+<Modal />
+
 <Drawer position="right" bgDrawer="bg-secondary-100" width="w-48 md:w-72">
 	<div class='flex flex-row justify-between mt-4 mx-4'>
 		<div class='text-xl md:text-3xl font-bold'>Menu</div>
@@ -28,8 +30,10 @@
 			<Icon src={XCircle} class='w-6 md:w-10'/>
 		</button>
 	</div>
-	<div class='mx-4 mt-1'>
+	<div class="mx-4 mt-1 mb-2">
 		<hr />
+	</div>
+	<div class='mx-4 mt-1'>
 		<nav class="flex flex-col">
 			<ul class="[&_a]:btn [&_a]:text-xl [&_a]:md:text-2xl [&_a]:mx-0 [&_a]:p-0 [&_a]:font-bold [&_p]:pb-1">
 				<li>

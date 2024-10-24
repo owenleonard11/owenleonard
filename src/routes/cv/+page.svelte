@@ -1,10 +1,28 @@
 <script lang="ts">
     import * as cv from "$lib/text/cv.json";
     import { slide } from "svelte/transition";
+    
+    import { Modal, getModalStore } from '@skeletonlabs/skeleton';
+    import type { ModalSettings, ModalComponent, ModalStore } from "@skeletonlabs/skeleton";
+
+    let innerWidth=0;
 
     let entryVisible: number = -1; 
-    const setEntryVisible = (uid: number) => { entryVisible = uid; }
+    const setEntryVisible = (uid: any) => { return () => entryVisible = uid; }
+
+    const modalStore = getModalStore();
+    const triggerSideModal = (side: any) => {
+        const sideModal: ModalSettings = {
+            type: 'alert',
+            title: '',
+            body: side,
+            buttonTextCancel: 'close'
+        }
+        return () => { modalStore.trigger(sideModal) }
+    };
 </script>
+
+<svelte:window bind:innerWidth />
 
 <div class="flex flex-col lg:flex-row">
     <div class="mx-8 lg:m-8 p-4 lg:w-[70dvw] lg:max-w-2xl max-h-[80dvh] order-2 lg:order-1 
@@ -22,7 +40,7 @@
                 {#each section.entries as entry}
                     {#if entry.side}
                         <button 
-                            on:click={() => setEntryVisible(entry.uid)} 
+                            on:click={innerWidth >= 1024 ? setEntryVisible(entry.uid) : triggerSideModal(entry.side)} 
                             class="grid grid-cols-subgrid col-span-4 hover:shadow-lg {entryVisible == entry.uid ? "bg-warning-300 shadow-lg" : ""}">
                             <div class="justify-self-start col-span-3 w-full rounded-sm text-left" >
                                 <div class={entry.bold == "left" ? "font-bold" : "flex flex-row flex-wrap"}>
@@ -55,7 +73,7 @@
     </div>
     <div class="order-1 mx-8 my-4 lg:order-2 lg:m-8 lg:ml-0">
         <div class="card p-4 lg:w-[30vw] rounded-lg">
-            You're looking at my <span class="font-bold">interactive online CV</span>, last updated 8 October 2024.
+            You're looking at my <span class="font-bold">interactive online CV</span>, last updated 23 October 2024.
             Click on an entry for additional information.
             If you'd prefer a PDF, you can 
             <a href="https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/cv.pdf" class="anchor" download target="_blank">
