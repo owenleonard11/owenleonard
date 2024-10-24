@@ -6,8 +6,9 @@
     const setEntryVisible = (uid: number) => { entryVisible = uid; }
 </script>
 
-<div class="flex flex-row">
-    <div class="m-8 p-4 w-[70dvw] max-w-2xl max-h-[80dvh] border-black border-2 rounded-md bg-warning-100 font-serif overflow-y-auto">
+<div class="flex flex-col lg:flex-row">
+    <div class="mx-8 lg:m-8 p-4 lg:w-[70dvw] lg:max-w-2xl max-h-[80dvh] order-2 lg:order-1 
+                border-black border-2 rounded-md bg-warning-100 font-serif overflow-y-auto">
         <p class="text-4xl font-bold">Owen Leonard</p>
         <p class="text-lg text-slate-700">
             <a class="hover:anchor" href="mailto:owenleonard@ucsb.edu">owenleonard@ucsb.edu</a>
@@ -52,8 +53,8 @@
             </div>
         {/each}
     </div>
-    <div>
-        <div class="card p-4 m-8 ml-0 w-[30vw] rounded-lg">
+    <div class="order-1 mx-8 my-4 lg:order-2 lg:m-8 lg:ml-0">
+        <div class="card p-4 lg:w-[30vw] rounded-lg">
             You're looking at my <span class="font-bold">interactive online CV</span>, last updated 8 October 2024.
             Click on an entry for additional information.
             If you'd prefer a PDF, you can 
@@ -64,7 +65,7 @@
         {#each cv.sections as section}
             {#each section.entries as entry}
                 {#if entry.uid == entryVisible}
-                    <div transition:slide class="card p-4 mx-8 ml-0 w-[30vw] rounded-lg border-tertiary-600 border-2">
+                    <div transition:slide class="card p-4 mx-8 ml-0 w-[30vw] rounded-lg border-tertiary-600 border-2 hidden mt-4 lg:block">
                         {entry.side}
                     </div>
                 {/if}
