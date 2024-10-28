@@ -5,7 +5,7 @@
 
 	import { Bars3, XCircle } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
-	import '@fortawesome/fontawesome-free/css/brands.min.css';
+	import '@fortawesome/fontawesome-free/css/all.min.css';
     import OwenIcon from '$lib/components/OwenIcon.svelte';
 
 	initializeStores();
