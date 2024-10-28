@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { base } from '$app/paths';
+	import { AppBar } from '@skeletonlabs/skeleton'
 	import { initializeStores, Toast, Modal, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 
 	import { Bars3, XCircle } from '@steeze-ui/heroicons';
@@ -60,23 +61,27 @@
 	</div>
 </Drawer>
 
-<div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-2 text-white drop-shadow-2xl flex flex-row sticky top-0">
-	<button class="btn lg:hidden p-0 mr-2" on:click={openDrawer}>
-		<Icon src={Bars3} class='h-8 md:h-12'/>
-	</button>
-	<a class="btn p-0 mr-auto" href="{base}/">
-		<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
-		<span class="hidden lg:flex h2 ml-1">owenleonard.dev</span>
-	</a>
-	<nav class="[&_a]:btn [&_a]:text-2xl font-bold">
-		<ul>
-			<li class="hidden lg:inline-block"><a href="{base}/projects">projects</a></li>
-			<li class="hidden lg:inline-block"><a href="{base}/disjecta">disjecta</a></li>
-			<li class="hidden lg:inline-block"><a href="{base}/about">about</a></li>
-			<li class="inline-block"><a href="https://github.com/owenleonard11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-			<li class="inline-block"><a href="https://orcid.org/0009-0007-4386-5628" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>
-		</ul>
-	</nav>
-</div>
+<AppBar background="bg-success-400" shadow="shadow-2xl" class="bg-[url('$lib/images/pixels.png')] text-white lg:flex flex-row sticky top-0">
+	<svelte:fragment slot="lead">
+		<button class="btn lg:hidden p-0 mr-2 inline-block" on:click={openDrawer}>
+			<Icon src={Bars3} class='w-8 md:w-12 inline'/>
+		</button>
+		<a class="btn p-0 mr-auto inline-block lg:flex" href="{base}/">
+			<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 inline"/>
+			<span class="hidden lg:flex h2 ml-1 inline">owenleonard.dev</span>
+		</a>
+	</svelte:fragment>
+	<svelte:fragment slot="trail">
+		<nav class="[&_a]:btn [&_a]:text-2xl [&_a]:p-1 [&_a]:lg:p-2 font-bold inline-block">
+			<ul>
+				<li class="hidden lg:inline m-2"><a href="{base}/projects">projects</a></li>
+				<li class="hidden lg:inline m-2"><a href="{base}/disjecta">disjecta</a></li>
+				<li class="hidden lg:inline m-2"><a href="{base}/about">about</a></li>
+				<li class="inline ml-2"><a href="https://github.com/owenleonard11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+				<li class="inline ml-2"><a href="https://orcid.org/0009-0007-4386-5628" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>
+			</ul>
+		</nav>
+	</svelte:fragment>
+</AppBar>
 
 <slot />
