@@ -68,13 +68,13 @@
 		<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
 		<span class="hidden lg:flex h2 ml-1">owenleonard.dev</span>
 	</a>
-	<nav class="[&_li]:inline-block [&_a]:btn [&_a]:text-2xl hidden lg:inline-flex items-center font-bold">
+	<nav class="[&_a]:btn [&_a]:text-2xl inline-flex items-center font-bold">
 		<ul>
-			<li><a href="{base}/projects">projects</a></li>
-			<li><a href="{base}/disjecta">disjecta</a></li>
-			<li><a href="{base}/about">about</a></li>
-			<li><a href="https://github.com/owenleonard11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-			<li><a href="https://orcid.org/0009-0007-4386-5628" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>
+			<li class="hidden lg:inline-block"><a href="{base}/projects">projects</a></li>
+			<li class="hidden lg:inline-block"><a href="{base}/disjecta">disjecta</a></li>
+			<li class="hidden lg:inline-block"><a href="{base}/about">about</a></li>
+			<li class="inline-block"><a href="https://github.com/owenleonard11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+			<li class="inline-block"><a href="https://orcid.org/0009-0007-4386-5628" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>
 		</ul>
 	</nav>
 </div>
