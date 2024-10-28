@@ -5,6 +5,7 @@
 
 	import { Bars3, XCircle } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
+	import '@fortawesome/fontawesome-free/css/brands.min.css';
     import OwenIcon from '$lib/components/OwenIcon.svelte';
 
 	initializeStores();
@@ -25,7 +26,7 @@
 
 <Modal />
 
-<Drawer position="right" bgDrawer="bg-secondary-100" width="w-48 md:w-72">
+<Drawer position="left" bgDrawer="bg-secondary-100" width="w-48 md:w-72">
 	<div class='flex flex-row justify-between mt-4 mx-4'>
 		<div class='text-xl md:text-3xl font-bold'>Menu</div>
 		<button on:click={closeDrawer}>
@@ -51,10 +52,6 @@
 					<p>read my blog</p>
 				</li>
 				<li>
-					<a href="{base}/contact" on:click={closeDrawer}>contact →</a>
-					<p>get in touch</p>
-				</li>
-				<li>
 					<a href="{base}/about" on:click={closeDrawer}>about →</a>
 					<p>find out more</p>
 				</li>
@@ -64,20 +61,20 @@
 </Drawer>
 
 <div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-2 text-white drop-shadow-2xl flex flex-row sticky top-0">
-	<a class="flex items-center mr-auto" href="{base}/">
-		<OwenIcon classes="stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
-		<p class="h2 ml-1">owenleonard.dev</p>
-	</a>
-	<button class="btn lg:hidden" on:click={openDrawer}>
+	<button class="btn lg:hidden p-0 mr-2" on:click={openDrawer}>
 		<Icon src={Bars3} class='h-8 md:h-12'/>
 	</button>
-	<nav class="[&_li]:inline-block [&_a]:btn [&_a]:text-2xl hidden lg:flex flex-row justify-center font-bold flex-nowrap">
+	<a class="btn p-0 inline-flex items-center mr-auto" href="{base}/">
+		<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
+		<span class="hidden lg:flex h2 ml-1">owenleonard.dev</span>
+	</a>
+	<nav class="[&_a]:btn [&_a]:text-2xl inline-flex items-center font-bold">
 		<ul>
-			<li><a href="{base}/">home</a></li>
-			<li><a href="{base}/projects">projects</a></li>
-			<li><a href="{base}/disjecta">disjecta</a></li>
-			<li><a href="{base}/contact">contact</a></li>
-			<li><a href="{base}/about">about</a></li>
+			<li class="hidden lg:inline-block"><a href="{base}/projects">projects</a></li>
+			<li class="hidden lg:inline-block"><a href="{base}/disjecta">disjecta</a></li>
+			<li class="hidden lg:inline-block"><a href="{base}/about">about</a></li>
+			<li class="inline-block"><a href="https://github.com/owenleonard11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+			<li class="inline-block"><a href="https://orcid.org/0009-0007-4386-5628" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>
 		</ul>
 	</nav>
 </div>
