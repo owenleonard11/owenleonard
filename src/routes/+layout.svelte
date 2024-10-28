@@ -64,11 +64,11 @@
 	<button class="btn lg:hidden p-0 mr-2" on:click={openDrawer}>
 		<Icon src={Bars3} class='h-8 md:h-12'/>
 	</button>
-	<a class="btn p-0 inline-flex items-center mr-auto" href="{base}/">
+	<a class="btn p-0 mr-auto" href="{base}/">
 		<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
 		<span class="hidden lg:flex h2 ml-1">owenleonard.dev</span>
 	</a>
-	<nav class="[&_a]:btn [&_a]:text-2xl inline-flex items-center font-bold">
+	<nav class="[&_a]:btn [&_a]:text-2xl font-bold">
 		<ul>
 			<li class="hidden lg:inline-block"><a href="{base}/projects">projects</a></li>
 			<li class="hidden lg:inline-block"><a href="{base}/disjecta">disjecta</a></li>
