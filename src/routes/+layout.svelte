@@ -51,10 +51,6 @@
 					<p>read my blog</p>
 				</li>
 				<li>
-					<a href="{base}/contact" on:click={closeDrawer}>contact →</a>
-					<p>get in touch</p>
-				</li>
-				<li>
 					<a href="{base}/about" on:click={closeDrawer}>about →</a>
 					<p>find out more</p>
 				</li>
@@ -73,11 +69,9 @@
 	</button>
 	<nav class="[&_li]:inline-block [&_a]:btn [&_a]:text-2xl hidden lg:flex flex-row justify-center font-bold flex-nowrap">
 		<ul>
-			<li><a href="{base}/">home</a></li>
 			<li><a href="{base}/projects">projects</a></li>
 			<li><a href="{base}/disjecta">disjecta</a></li>
 			<li><a href="{base}/contact">contact</a></li>
-			<li><a href="{base}/about">about</a></li>
 		</ul>
 	</nav>
 </div>
