@@ -4,8 +4,8 @@
     import '@fortawesome/fontawesome-free/css/all.min.css';
 </script>
 
-<div class="flex flex-row m-8 md:m-12 md:mt-16 lg:m-16 lg:mt-24">
-    <div class="hidden md:block mr-8 rounded-lg border-tertiary-400 border-2 py-4 bg-secondary-100">
+<div class="flex flex-row m-4 md:m-8 md:mt-12 lg:m-12 lg:mt-16 xl:m-16 xl:mt-24">
+    <div class="hidden md:block mr-8">
         <OwenIcon classes="h-[30dvw] w-[30dvw] stroke-[4px]"/>
         <div class="mt-4 text-center w-128 text-lg xl:text-xl px-4">
             after Constantin Brancusi's 
@@ -14,8 +14,8 @@
             </a></em>
         </div>
     </div>
-    <div class="md:text-xl mr-8">
-        <div class="rounded-lg border-tertiary-400 border-2 p-4 bg-secondary-100">
+    <div class="text-sm md:text-lg lg:text-xl md:mr-8">
+        <div class="rounded-lg border-tertiary-400 border-2 p-2 lg:p-4 bg-secondary-100">
             <p>
                 I'm Owen Leonard, a PhD student in English at UC Santa Barbara. 
                 My research interests include critical AI and critical machine learning, 
@@ -24,40 +24,46 @@
                 Follow the links below for more:
             </p>
         </div>
-        <dl class="list-dl mt-4 inline-block [&_a]:card-hover">
-            <a class="flex p-2 bg-secondary-100 rounded-md border-tertiary-400 border-2 pr-4" href="{base}/cv">
-                <span class="badge mr-2"><i class="w-10 fa-regular fa-file text-4xl"/></span>
-                <span class="text-xl">
-                    <dt class="text-left font-bold">View my CV →</dt>
-                    <dd class="text-lg">See my interactive online CV, or download a PDF</dd>
+        <dl class="
+            list-dl mt-4 inline-block 
+            [&_a]:card-hover [&_a]:flex [&_a]:p-2 [&_a]:bg-secondary-100 [&_a]:rounded-md [&_a]:border-tertiary-400 [&_a]:border-2 [&_a]:pr-4
+            [&_i]:text-2xl [&_i]:w-8 [&_i]:md:text-4xl [&_i]:md:w-10
+            [&_dt]:text-left [&_dt]:font-bold [&_dt]:text-base [&_dt]:lg:text-xl
+            [&_dd]:text-xs [&_dd]:md:text-sm [&_dd]:lg:text-lg
+        ">
+            <a href="{base}/cv">
+                <span class="badge mr-1 md:mr-2 text-center"><i class="fa-regular fa-file"/></span>
+                <span>
+                    <dt>View my CV →</dt>
+                    <dd>See my interactive online CV, or download a PDF</dd>
                 </span>
             </a>
-            <a class="flex p-2 bg-secondary-100 rounded-md border-tertiary-400 border-2" href="{base}/disjecta">
-                <span class="badge mr-2"><i class="w-10 fa-solid fa-book-open text-4xl"/></span>
-                <span class="text-xl">
-                    <dt class="text-left font-bold">Read my blog →</dt>
-                    <dd class="text-lg">Find the latest from my blog, <em>disjecta</em></dd>
+            <a href="{base}/disjecta">
+                <span class="badge mr-1 md:mr-2 text-center"><i class="fa-solid fa-book-open"/></span>
+                <span>
+                    <dt>Read my blog →</dt>
+                    <dd>Find the latest from my blog, <em>disjecta</em></dd>
                 </span>
             </a>
-            <a class="flex p-2 bg-secondary-100 rounded-md border-tertiary-400 border-2" href="{base}/projects">
-                <span class="badge mr-2"><i class="w-10 fa-regular fa-folder text-4xl"/></span>
-                <span class="text-xl">
-                    <dt class="text-left font-bold">Check out my projects →</dt>
-                    <dd class="text-lg">Browse my writing and programming projects</dd>
+            <a href="{base}/projects">
+                <span class="badge mr-1 md:mr-2 text-center"><i class="fa-regular fa-folder"/></span>
+                <span>
+                    <dt>Check out my projects →</dt>
+                    <dd>Browse my writing and programming projects</dd>
                 </span>
             </a>
-            <a class="flex p-2 bg-secondary-100 rounded-md border-tertiary-400 border-2" href="https://github.com/owenleonard11">
-                <span class="badge mr-2"><i class="w-10 fa-brands fa-github text-4xl"/></span>
-                <span class="text-xl">
-                    <dt class="text-left font-bold">Visit my Github page →</dt>
-                    <dd class="text-lg">Explore and download my open-source code</dd>
+            <a href="https://github.com/owenleonard11">
+                <span class="badge mr-1 md:mr-2 text-center"><i class="fa-brands fa-github"/></span>
+                <span>
+                    <dt>Visit my Github page →</dt>
+                    <dd>Explore and download my open-source code</dd>
                 </span>
             </a>
-            <a class="flex p-2 bg-secondary-100 rounded-md border-tertiary-400 border-2" href="https://orcid.org/0009-0007-4386-5628">
-                <span class="badge mr-2"><i class="w-10 fa-brands fa-orcid text-4xl"/></span>
-                <span class="text-xl">
-                    <dt class="text-left font-bold">Visit my ORCID profile →</dt>
-                    <dd class="text-lg">Find my scholarly publications</dd>
+            <a href="https://orcid.org/0009-0007-4386-5628">
+                <span class="badge mr-1 md:mr-2 text-center"><i class="fa-brands fa-orcid"/></span>
+                <span>
+                    <dt>Visit my ORCID profile →</dt>
+                    <dd>Find my scholarly publications</dd>
                 </span>
             </a>
         </dl>
