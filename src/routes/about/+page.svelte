@@ -52,14 +52,14 @@
                     <dd>Browse my writing and programming projects</dd>
                 </span>
             </a>
-            <a href="https://github.com/owenleonard11">
+            <a href="https://github.com/owenleonard11" target="_blank">
                 <span class="badge mr-1 md:mr-2 text-center"><i class="fa-brands fa-github"/></span>
                 <span>
                     <dt>Visit my Github page →</dt>
                     <dd>Explore and download my open-source code</dd>
                 </span>
             </a>
-            <a href="https://orcid.org/0009-0007-4386-5628">
+            <a href="https://orcid.org/0009-0007-4386-5628" target="_blank">
                 <span class="badge mr-1 md:mr-2 text-center"><i class="fa-brands fa-orcid"/></span>
                 <span>
                     <dt>Visit my ORCID profile →</dt>
