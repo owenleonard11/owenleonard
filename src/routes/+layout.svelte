@@ -5,6 +5,7 @@
 
 	import { Bars3, XCircle } from '@steeze-ui/heroicons';
 	import { Icon } from '@steeze-ui/svelte-icon';
+	import '@fortawesome/fontawesome-free/css/brands.min.css';
     import OwenIcon from '$lib/components/OwenIcon.svelte';
 
 	initializeStores();
@@ -60,18 +61,20 @@
 </Drawer>
 
 <div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-2 text-white drop-shadow-2xl flex flex-row sticky top-0">
-	<button class="btn lg:hidden" on:click={openDrawer}>
+	<button class="btn lg:hidden p-0 mr-2" on:click={openDrawer}>
 		<Icon src={Bars3} class='h-8 md:h-12'/>
 	</button>
 	<a class="btn p-0 inline-flex items-center mr-auto" href="{base}/">
-		<OwenIcon classes="stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
+		<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
 		<span class="hidden lg:flex h2 ml-1">owenleonard.dev</span>
 	</a>
-	<nav class="[&_li]:inline-block [&_a]:btn [&_a]:text-2xl hidden lg:flex flex-row justify-center font-bold flex-nowrap">
+	<nav class="[&_li]:inline-block [&_a]:btn [&_a]:text-2xl hidden lg:inline-flex items-center font-bold">
 		<ul>
 			<li><a href="{base}/projects">projects</a></li>
 			<li><a href="{base}/disjecta">disjecta</a></li>
 			<li><a href="{base}/about">about</a></li>
+			<li><a href="https://github.com/owenleonard11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+			<li><a href="https://orcid.org/0009-0007-4386-5628" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>
 		</ul>
 	</nav>
 </div>
