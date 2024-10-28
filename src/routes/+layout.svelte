@@ -25,7 +25,7 @@
 
 <Modal />
 
-<Drawer position="right" bgDrawer="bg-secondary-100" width="w-48 md:w-72">
+<Drawer position="left" bgDrawer="bg-secondary-100" width="w-48 md:w-72">
 	<div class='flex flex-row justify-between mt-4 mx-4'>
 		<div class='text-xl md:text-3xl font-bold'>Menu</div>
 		<button on:click={closeDrawer}>
@@ -60,18 +60,18 @@
 </Drawer>
 
 <div class="bg-success-400 bg-[url('$lib/images/pixels.png')] p-2 text-white drop-shadow-2xl flex flex-row sticky top-0">
-	<a class="flex items-center mr-auto" href="{base}/">
-		<OwenIcon classes="stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
-		<p class="h2 ml-1">owenleonard.dev</p>
-	</a>
 	<button class="btn lg:hidden" on:click={openDrawer}>
 		<Icon src={Bars3} class='h-8 md:h-12'/>
 	</button>
+	<a class="btn p-0 inline-flex items-center mr-auto" href="{base}/">
+		<OwenIcon classes="stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12"/>
+		<span class="hidden lg:flex h2 ml-1">owenleonard.dev</span>
+	</a>
 	<nav class="[&_li]:inline-block [&_a]:btn [&_a]:text-2xl hidden lg:flex flex-row justify-center font-bold flex-nowrap">
 		<ul>
 			<li><a href="{base}/projects">projects</a></li>
 			<li><a href="{base}/disjecta">disjecta</a></li>
-			<li><a href="{base}/contact">contact</a></li>
+			<li><a href="{base}/about">about</a></li>
 		</ul>
 	</nav>
 </div>
