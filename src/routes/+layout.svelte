@@ -27,16 +27,14 @@
 
 <Modal />
 
-<Drawer position="left" bgDrawer="bg-secondary-100" width="w-48 md:w-72">
+<Drawer position="left" bgDrawer="bg-primary-400" width="w-48 md:w-72">
 	<div class='flex flex-row justify-between mt-4 mx-4'>
-		<div class='text-xl md:text-3xl font-bold'>Menu</div>
+		<div class='text-xl md:text-3xl font-extrabold'>Menu</div>
 		<button on:click={closeDrawer}>
 			<Icon src={XCircle} class='w-6 md:w-10'/>
 		</button>
 	</div>
-	<div class="mx-4 mt-1 mb-2">
-		<hr />
-	</div>
+	<div class="mx-4 mt-1 mb-2 border-t-2 border-primary-600" />
 	<div class='mx-4 mt-1'>
 		<nav class="flex flex-col">
 			<ul class="[&_a]:btn [&_a]:text-xl [&_a]:md:text-2xl [&_a]:mx-0 [&_a]:p-0 [&_a]:font-bold [&_p]:pb-1">
@@ -61,18 +59,18 @@
 	</div>
 </Drawer>
 
-<AppBar background="bg-success-400" shadow="shadow-2xl" class="bg-[url('$lib/images/pixels.png')] text-white lg:flex flex-row sticky top-0">
+<AppBar background="bg-success-400" shadow="shadow-2xl" class="lg:flex flex-row sticky top-0 bg-[url('$lib/images/binding-dark.png')] ">
 	<svelte:fragment slot="lead">
 		<button class="btn lg:hidden p-0 mr-2 inline-block" on:click={openDrawer}>
 			<Icon src={Bars3} class='w-8 md:w-12 inline'/>
 		</button>
 		<a class="btn p-0 mr-auto inline-block lg:flex" href="{base}/">
-			<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 inline"/>
-			<span class="hidden lg:flex h2 ml-1 inline">owenleonard.dev</span>
+			<OwenIcon classes="stroke-[20px] lg:stroke-[15px] h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 inline"/>
+			<span class="hidden lg:flex h2 ml-1 inline font-medium text-5xl">owenleonard.dev</span>
 		</a>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
-		<nav class="[&_a]:btn [&_a]:text-2xl [&_a]:p-1 [&_a]:lg:p-2 font-bold inline-block">
+		<nav class="[&_a]:btn [&_a]:text-3xl [&_a]:p-1 [&_a]:lg:p-2 font-bold inline-block">
 			<ul>
 				<li class="hidden lg:inline m-2"><a href="{base}/projects">projects</a></li>
 				<li class="hidden lg:inline m-2"><a href="{base}/disjecta">disjecta</a></li>

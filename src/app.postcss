@@ -3,4 +3,14 @@
 @tailwind utilities;
 @tailwind variants;
 
-body { @apply bg-secondary-100 bg-[url('$lib/images/arches.png')] }
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf');
+}
+
+:root [data-theme='earth-theme'] {
+    --theme-font-family-base: 'Rokkitt', serif;
+    --theme-font-family-heading: 'Rokkitt', serif;
+}
+
+body { @apply bg-surface-400 bg-[url('$lib/images/arches.png')] }
