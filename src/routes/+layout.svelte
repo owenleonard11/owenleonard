@@ -61,7 +61,7 @@
 	</div>
 </Drawer>
 
-<AppBar background="bg-success-400" shadow="shadow-2xl" class="lg:flex flex-row sticky top-0">
+<AppBar background="bg-success-400" shadow="shadow-2xl" class="lg:flex flex-row sticky top-0 bg-[url('$lib/images/binding-dark.png')] ">
 	<svelte:fragment slot="lead">
 		<button class="btn lg:hidden p-0 mr-2 inline-block" on:click={openDrawer}>
 			<Icon src={Bars3} class='w-8 md:w-12 inline'/>
