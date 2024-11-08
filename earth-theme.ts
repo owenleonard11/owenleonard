@@ -1,8 +1,7 @@
-
 import type { CustomThemeConfig } from '@skeletonlabs/tw-plugin';
 
-export const earthTheme: CustomThemeConfig = {
-    name: 'earth-theme',
+export const myCustomTheme: CustomThemeConfig = {
+    name: 'my-custom-theme',
     properties: {
 		// =~= Theme Properties =~=
 		"--theme-font-family-base": `ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif`,
@@ -32,17 +31,17 @@ export const earthTheme: CustomThemeConfig = {
 		"--color-primary-700": "109 146 140", // #6d928c
 		"--color-primary-800": "87 116 112", // #577470
 		"--color-primary-900": "71 95 91", // #475f5b
-		// secondary | #cf7147 
-		"--color-secondary-50": "248 234 227", // #f8eae3
-		"--color-secondary-100": "245 227 218", // #f5e3da
-		"--color-secondary-200": "243 220 209", // #f3dcd1
-		"--color-secondary-300": "236 198 181", // #ecc6b5
-		"--color-secondary-400": "221 156 126", // #dd9c7e
-		"--color-secondary-500": "207 113 71", // #cf7147
-		"--color-secondary-600": "186 102 64", // #ba6640
-		"--color-secondary-700": "155 85 53", // #9b5535
-		"--color-secondary-800": "124 68 43", // #7c442b
-		"--color-secondary-900": "101 55 35", // #653723
+		// secondary | #896f8c 
+		"--color-secondary-50": "237 233 238", // #ede9ee
+		"--color-secondary-100": "231 226 232", // #e7e2e8
+		"--color-secondary-200": "226 219 226", // #e2dbe2
+		"--color-secondary-300": "208 197 209", // #d0c5d1
+		"--color-secondary-400": "172 154 175", // #ac9aaf
+		"--color-secondary-500": "137 111 140", // #896f8c
+		"--color-secondary-600": "123 100 126", // #7b647e
+		"--color-secondary-700": "103 83 105", // #675369
+		"--color-secondary-800": "82 67 84", // #524354
+		"--color-secondary-900": "67 54 69", // #433645
 		// tertiary | #757068 
 		"--color-tertiary-50": "234 234 232", // #eaeae8
 		"--color-tertiary-100": "227 226 225", // #e3e2e1

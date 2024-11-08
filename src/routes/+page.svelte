@@ -11,7 +11,7 @@
 	</div>
 
 	<div class="flex flex-row flex-wrap justify-center mt-4 md:mt-8">
-		<HomeCard href="/projects" text="read my writing" bg="bg-warning-100" classes="[&_div]:grid-cols-3">
+		<HomeCard href="/projects" text="read my writing" bg="bg-surface-400" classes="[&_div]:grid-cols-3">
 			<div>
 				<div class="bg-surface-500" />
 			</div>
