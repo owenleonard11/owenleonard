@@ -3,7 +3,7 @@
 </script>
 
 <div class="mx-8 lg:mx-16">
-	<div class="mt-4 md:mt-8 text-center font-serif">
+	<div class="mt-4 md:mt-8 text-center">
 		<h1 class="text-4xl md:text-7xl lg:text-8xl font-bold md:font-normal ">owen leonard</h1>
 		<div class="text-xl md:text-3xl lg:text-4xl font-extrabold mt-2 md:mt-4">
 			writing, programming, and cultural criticism

@@ -67,12 +67,12 @@
 			<Icon src={Bars3} class='w-8 md:w-12 inline'/>
 		</button>
 		<a class="btn p-0 mr-auto inline-block lg:flex" href="{base}/">
-			<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 inline"/>
-			<span class="hidden lg:flex h2 ml-1 inline text-4xl font-bold">owenleonard.dev</span>
+			<OwenIcon classes="stroke-[20px] lg:stroke-[15px] h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 inline"/>
+			<span class="hidden lg:flex h2 ml-1 inline font-medium text-5xl">owenleonard.dev</span>
 		</a>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
-		<nav class="[&_a]:btn [&_a]:text-2xl [&_a]:p-1 [&_a]:lg:p-2 font-bold inline-block">
+		<nav class="[&_a]:btn [&_a]:text-3xl [&_a]:p-1 [&_a]:lg:p-2 font-bold inline-block">
 			<ul>
 				<li class="hidden lg:inline m-2"><a href="{base}/projects">projects</a></li>
 				<li class="hidden lg:inline m-2"><a href="{base}/disjecta">disjecta</a></li>
