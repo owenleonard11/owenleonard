@@ -61,14 +61,14 @@
 	</div>
 </Drawer>
 
-<AppBar background="bg-success-400" shadow="shadow-2xl" class="bg-[url('$lib/images/pixels.png')] text-white lg:flex flex-row sticky top-0">
+<AppBar background="bg-success-400" shadow="shadow-2xl" class="lg:flex flex-row sticky top-0">
 	<svelte:fragment slot="lead">
 		<button class="btn lg:hidden p-0 mr-2 inline-block" on:click={openDrawer}>
 			<Icon src={Bars3} class='w-8 md:w-12 inline'/>
 		</button>
 		<a class="btn p-0 mr-auto inline-block lg:flex" href="{base}/">
-			<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 inline"/>
-			<span class="hidden lg:flex h2 ml-1 inline">owenleonard.dev</span>
+			<OwenIcon classes="stroke-[20px] lg:stroke-[12px] h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 inline"/>
+			<span class="hidden lg:flex h2 ml-1 inline text-4xl font-bold">owenleonard.dev</span>
 		</a>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
