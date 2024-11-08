@@ -14,8 +14,8 @@
             </a></em>
         </div>
     </div>
-    <div class="text-sm md:text-lg lg:text-xl md:mr-8">
-        <div class="rounded-lg border-tertiary-400 border-2 p-2 lg:p-4 bg-secondary-100">
+    <div class="md:text-xl lg:text-2xl md:mr-8">
+        <div class="rounded-lg p-2 lg:p-4 bg-primary-400 border-primary-700 border-2 font-medium">
             <p>
                 I'm Owen Leonard, a PhD student in English at UC Santa Barbara. 
                 My research interests include critical AI and critical machine learning, 
@@ -23,15 +23,14 @@
                 and twentieth-century modernism and its implications for the digital present.
                 Follow the links below for more:
             </p>
-        </div>
-        <dl class="
+            <dl class="
             list-dl mt-4 inline-block 
-            [&_a]:card-hover [&_a]:flex [&_a]:p-2 [&_a]:bg-secondary-100 [&_a]:rounded-md [&_a]:border-tertiary-400 [&_a]:border-2 [&_a]:pr-4
+            [&_a]:card-hover [&_a]:flex [&_a]:p-2 [&_a]:pr-4 [&_a]:border-t-2 [&_a]:border-primary-700 last:[&_a]:border-b-2
             [&_i]:text-2xl [&_i]:w-8 [&_i]:md:text-4xl [&_i]:md:w-10
             [&_dt]:text-left [&_dt]:font-bold [&_dt]:text-base [&_dt]:lg:text-xl
             [&_dd]:text-xs [&_dd]:md:text-sm [&_dd]:lg:text-lg
         ">
-            <a href="{base}/cv">
+            <a href="{base}/cv" class="border-t-2 border-primary-700">
                 <span class="badge mr-1 md:mr-2 text-center"><i class="fa-regular fa-file"/></span>
                 <span>
                     <dt>View my CV →</dt>
@@ -67,5 +66,7 @@
                 </span>
             </a>
         </dl>
+        </div>
+        
     </div>
 </div>
