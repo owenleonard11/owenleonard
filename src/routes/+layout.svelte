@@ -27,16 +27,14 @@
 
 <Modal />
 
-<Drawer position="left" bgDrawer="bg-secondary-100" width="w-48 md:w-72">
+<Drawer position="left" bgDrawer="bg-primary-400" width="w-48 md:w-72">
 	<div class='flex flex-row justify-between mt-4 mx-4'>
-		<div class='text-xl md:text-3xl font-bold'>Menu</div>
+		<div class='text-xl md:text-3xl font-extrabold'>Menu</div>
 		<button on:click={closeDrawer}>
 			<Icon src={XCircle} class='w-6 md:w-10'/>
 		</button>
 	</div>
-	<div class="mx-4 mt-1 mb-2">
-		<hr />
-	</div>
+	<div class="mx-4 mt-1 mb-2 border-t-2 border-primary-600" />
 	<div class='mx-4 mt-1'>
 		<nav class="flex flex-col">
 			<ul class="[&_a]:btn [&_a]:text-xl [&_a]:md:text-2xl [&_a]:mx-0 [&_a]:p-0 [&_a]:font-bold [&_p]:pb-1">
