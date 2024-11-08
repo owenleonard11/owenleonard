@@ -1,7 +1,8 @@
+
 import type { CustomThemeConfig } from '@skeletonlabs/tw-plugin';
 
-export const myCustomTheme: CustomThemeConfig = {
-    name: 'my-custom-theme',
+export const earthTheme: CustomThemeConfig = {
+    name: 'earth-theme',
     properties: {
 		// =~= Theme Properties =~=
 		"--theme-font-family-base": `ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif`,
