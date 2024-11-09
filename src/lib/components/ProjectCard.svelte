@@ -1,10 +1,8 @@
 <script lang="ts">
     import { slide } from 'svelte/transition';
-    import { base } from '$app/paths';
 
     export let project;
     const { title, url, banner, banner_alt, desc, tags } = project;
- 
 
     let expand: boolean = false;
 </script>
@@ -15,7 +13,9 @@
 >
     {#if banner}
         <div class="px-4 pt-4 border-b-2 border-primary-500">
-            <img src="{base}/src/lib/images/projects/{banner}" alt={banner_alt} class="h-auto max-w-full rounded-t-md"/>
+            {#await import(`$lib/images/projects/${banner}.png`) then { default: src }}
+                <img {src} alt={banner_alt} class="h-auto max-w-full rounded-t-md"/>
+            {/await} 
         </div>
     {/if}
     <footer class="p-2 md:p-4">
