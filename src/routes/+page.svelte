@@ -11,7 +11,7 @@
 	</div>
 
 	<div class="flex flex-row flex-wrap justify-center mt-4 md:mt-8">
-		<HomeCard href="/projects" text="read my writing" bg="bg-surface-400" classes="[&_div]:grid-cols-3">
+		<HomeCard href="/writing" text="read my writing" bg="bg-surface-400" classes="[&_div]:grid-cols-3">
 			<div>
 				<div class="bg-error-500" />
 			</div>
@@ -27,7 +27,7 @@
 				<div class="bg-error-500 col-span-2" />
 			</div>
 		</HomeCard>
-		<HomeCard href="/projects" text="check out my code" bg="bg-secondary-900">
+		<HomeCard href="/projects" text="see my projects" bg="bg-secondary-900">
 			<div class="grid grid-cols-8 gap-1 md:gap-2">
 				<div class="bg-warning-400" />
 				<div class="bg-primary-400 col-span-2"/>

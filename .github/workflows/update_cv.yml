@@ -1,0 +1,42 @@
+name: Update CV
+
+on: workflow_dispatch
+
+jobs:
+  update-cv:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents:
+        write
+
+    steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      
+      - name: Update cv.json
+        run: python scripts/update_cv_json.py
+
+      - name: Update cv.tex
+        run: python scripts/update_cv_tex.py
+      
+      - name: Compile cv.pdf
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: src/lib/text/cv.tex
+
+      - name: Setup AWS CLI
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.S3_READ_ACCESS }}
+          aws-secret-access-key: ${{ secrets.S3_READ_SECRET }}
+          aws-region: us-west-1
+      
+      - name: Sync cv.pdf to S3
+        run: |
+          aws s3 cp cv.pdf s3://owenleonard-dev-assets/cv.pdf
