@@ -52,20 +52,20 @@
         </p>
         <div class="mt-2 border-t-2 border-primary-600"/>
         {#each cv.sections as section}
-            <p class="text-lg md:text-xl font-bold mt-2">{section.title}</p>
+            <p class="text-lg md:text-xl font-bold mt-2 text-left">{section.title}</p>
             {#each section.subsections as subsection}
                 <div class="text-sm md:text-base">
                     <p class="font-bold">
-                        {subsection.title} 
-                        <span class="ml-2 text-slate-700">{subsection.alt}</span>
+                        <span class="mr-2">{subsection.title}</span>
+                        <span class="text-slate-700">{subsection.alt}</span>
                     </p>
                     {#each subsection.entries as entry}
                         <button 
                             on:click={innerWidth >= 1024 ? setEntryVisible(entry.position) : triggerSideModal(entry.side)}
                             class="flex w-full hover:shadow-lg {entryVisible == entry.position ? "bg-secondary-300 shadow-lg" : ""}"
                         >
-                            <div class="mr-auto">{entry.position}</div>
-                            <div>{entry.date}</div>
+                            <div class="mr-auto text-left">{entry.position}{innerWidth >= 768 ? "" : ", " + entry.date}</div>
+                            <div class="ml-4 text-right hidden md:flex">{entry.date}</div>
                         </button>
                     {/each}
                 </div>
@@ -73,7 +73,7 @@
         {/each}
     </div>
     <div class="order-1 mx-8 my-4 lg:order-2 lg:m-8 lg:ml-0">
-        <div class="card text-sm md:text-base lg:text-lg p-4 lg:w-[30vw] rounded-lg bg-primary-300 border-primary-600 border-2">
+        <div class="card lg:text-lg p-4 lg:w-[30vw] rounded-lg bg-primary-300 border-primary-600 border-2">
             You're looking at my <span class="font-bold">interactive online CV</span>.
             Click on an entry for additional information. If you'd prefer a PDF, 
             <a href="https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/cv.pdf" class="anchor" download target="_blank">
