@@ -35,14 +35,23 @@
         <a on:mouseenter={() => showText=true} on:mouseleave={() => showText=false}
            class="card card-hover h-auto max-w-full bg-primary-400 border-2 border-primary-700 rounded-lg" href="https://huml.ucsb.edu" target="_blank"
         >
-            <img src={humlHero} alt="vector drawing of a GPU" class="px-4 pt-4 h-auto max-w-full"/>
+            <div class="px-4 pt-4">
+                <img src={humlHero} alt="vector drawing of a GPU" class="h-auto max-w-full rounded-t-md"/>
+            </div>
             <footer class="p-2 md:p-4 border-t-2 border-primary-500">
-                <p class="text-lg md:text-xl lg:text-3xl font-semibold mx-4">UCSB Center for the Humanities and Machine Learning (HUML) →</p>
+                <p class="text-lg md:text-xl lg:text-3xl font-semibold mx-4">UCSB Center for the Humanities and Machine Learning (HUML) Website →</p>
                 {#if showText}
-                    <p in:slide out:slide class="mx-4 md:text-lg lg:text-xl">
-                        As a graduate student researcher, I desgined the website for UC Santa Barbara's Center for the Humanities and Machine Learning.
-                        Visit to see upcoming events, recent publications, and more.
-                    </p>
+                    <div in:slide out:slide class="mx-4 md:text-lg lg:text-xl">
+                        <p>
+                            As a graduate student researcher, I desgined the website for UC Santa Barbara's Center for the Humanities and Machine Learning.
+                            Visit to see upcoming events, recent publications, and more.
+                        </p>
+                        <div class="flex flex-row gap-2 mt-2">
+                            <span class="badge text-lg bg-secondary-400">2024</span>
+                            <span class="badge text-lg bg-secondary-400">web</span>
+                            <span class="badge text-lg bg-secondary-400">UCSB</span>
+                        </div>
+                    </div>
                 {/if}
             </footer>
         </a>
