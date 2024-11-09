@@ -19,7 +19,9 @@
         </div>
     {/if}
     <footer class="p-2 md:p-4">
-        <p class="text-lg md:text-xl lg:text-3xl font-semibold mx-4">{title} →</p>
+        <p class="text-lg md:text-xl lg:text-3xl font-semibold mx-4">
+            {title} <span class="touch:hidden">→</span>
+        </p>
         {#if expand}
             <div transition:slide class="mx-4 md:text-lg lg:text-xl">
                 <p>{desc}</p>
