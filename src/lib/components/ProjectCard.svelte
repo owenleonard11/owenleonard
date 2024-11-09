@@ -19,13 +19,21 @@
         </div>
     {/if}
     <footer class="p-2 md:p-4">
-        <p class="text-lg md:text-xl lg:text-3xl font-semibold mx-4">{title} →</p>
+        <p class="text-lg md:text-xl lg:text-3xl font-semibold mx-4">{title}&nbsp;→</p>
+        <div class="hidden touch:block mx-4 md:text-lg lg:text-xl">
+            <p>{desc}</p>
+            <div class="flex flex-row gap-2 mt-2">
+                {#each tags as tag}
+                    <span class="badge md:text-lg bg-secondary-400">{tag}</span>
+                {/each}
+            </div>
+        </div>
         {#if expand}
-            <div transition:slide class="mx-4 md:text-lg lg:text-xl">
+            <div transition:slide class="mx-4 md:text-lg lg:text-xl touch:hidden">
                 <p>{desc}</p>
                 <div class="flex flex-row gap-2 mt-2">
                     {#each tags as tag}
-                        <span class="badge text-lg bg-secondary-400">{tag}</span>
+                        <span class="badge md:text-lg bg-secondary-400">{tag}</span>
                     {/each}
                 </div>
             </div>
