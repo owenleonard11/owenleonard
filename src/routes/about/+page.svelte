@@ -37,11 +37,11 @@
                     <dd>See my interactive online CV, or download a PDF</dd>
                 </span>
             </a>
-            <a href="{base}/disjecta">
+            <a href="{base}/writing">
                 <span class="badge mr-1 md:mr-2 text-center"><i class="fa-solid fa-book-open"/></span>
                 <span>
-                    <dt>Read my blog →</dt>
-                    <dd>Find the latest from my blog, <em>disjecta</em></dd>
+                    <dt>Read my writing →</dt>
+                    <dd>Find my latest academic writing</dd>
                 </span>
             </a>
             <a href="{base}/projects">
