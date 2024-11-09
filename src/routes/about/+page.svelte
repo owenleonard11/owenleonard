@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="md:text-xl lg:text-2xl md:mr-8">
-        <div class="rounded-lg p-2 lg:p-4 bg-primary-400 border-primary-700 border-2 font-medium">
+        <div class="rounded-lg p-2 lg:p-4 bg-primary-400 border-primary-700 border-2 ">
             <p>
                 I'm Owen Leonard, a PhD student in English at UC Santa Barbara. 
                 My research interests include critical AI and critical machine learning, 
