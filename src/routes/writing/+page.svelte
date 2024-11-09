@@ -1,5 +1,11 @@
-<a href="/">
-    <div class="card card-hover p-4 m-4 text-xl bg-amber-200 rounded-lg">
-        This page is under construction. Click to go home.
-    </div>
-</a>
+<script lang="ts">
+    import { Accordion } from '@skeletonlabs/skeleton';
+    import WritingCard from '$lib/components/WritingCard.svelte';
+    import * as writings from "$lib/text/writing.json";
+</script>
+
+<div class="bg-primary-400 m-4 md:m-8 md:mt-12 lg:m-12 lg:mt-16 lg:p-2 rounded-lg border-2 border-primary-600">
+    <Accordion>
+        <WritingCard writing={writings.ulysses_supercomputer}/>
+    </Accordion>
+</div>
