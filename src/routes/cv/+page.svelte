@@ -64,12 +64,8 @@
                             on:click={innerWidth >= 1024 ? setEntryVisible(entry.position) : triggerSideModal(entry.side)}
                             class="flex w-full hover:shadow-lg {entryVisible == entry.position ? "bg-secondary-300 shadow-lg" : ""}"
                         >
-                            <div class="inline mr-auto">
-                                {entry.position}
-                            </div>
-                            <div>
-                                {entry.date}
-                            </div>
+                            <div class="mr-auto">{entry.position}</div>
+                            <div>{entry.date}</div>
                         </button>
                     {/each}
                 </div>
