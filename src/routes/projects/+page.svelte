@@ -1,5 +1,13 @@
-<a href="/">
-    <div class="card card-hover p-4 m-4 text-xl bg-amber-200 rounded-lg">
-        This page is under construction. Click to go home.
+<script lang="ts">
+    import * as projects from '$lib/text/projects.json'
+    import ProjectCard from '$lib/components/ProjectCard.svelte';
+</script>
+
+<div class="flex flex-row md:mx-16 lg:mx-32 xl:mx-64 mt-4 md:mt-8 lg:mt-16 gap-4 lg:gap-8 mb-4">
+    <div class="flex flex-col gap-4 lg:gap-8 w-full lg:w-1/2">
+        <ProjectCard project={projects.huml_site}/>
     </div>
-</a>
+    <div class="flex flex-col gap-4 lg:gap-8 w-full w-1/2">
+
+    </div>
+</div>
