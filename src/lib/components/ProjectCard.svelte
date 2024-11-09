@@ -1,10 +1,8 @@
 <script lang="ts">
     import { slide } from 'svelte/transition';
-    import { base } from '$app/paths';
 
     export let project;
     const { title, url, banner, banner_alt, desc, tags } = project;
- 
 
     let expand: boolean = false;
 </script>
