@@ -44,11 +44,11 @@
 				</li>
 				<li>
 					<a href="{base}/projects" on:click={closeDrawer}>projects →</a>
-					<p>see my work</p>
+					<p>see my projects</p>
 				</li>
 				<li>
-					<a href="{base}/disjecta" on:click={closeDrawer}>disjecta →</a>
-					<p>read my blog</p>
+					<a href="{base}/writing" on:click={closeDrawer}>writing →</a>
+					<p>read my writing</p>
 				</li>
 				<li>
 					<a href="{base}/about" on:click={closeDrawer}>about →</a>
@@ -73,7 +73,7 @@
 		<nav class="[&_a]:btn [&_a]:text-3xl [&_a]:p-1 [&_a]:lg:p-2 font-bold inline-block">
 			<ul>
 				<li class="hidden lg:inline m-2"><a href="{base}/projects">projects</a></li>
-				<li class="hidden lg:inline m-2"><a href="{base}/disjecta">disjecta</a></li>
+				<li class="hidden lg:inline m-2"><a href="{base}/writing">writing</a></li>
 				<li class="hidden lg:inline m-2"><a href="{base}/about">about</a></li>
 				<li class="inline ml-2"><a href="https://github.com/owenleonard11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
 				<li class="inline ml-2"><a href="https://orcid.org/0009-0007-4386-5628" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>
