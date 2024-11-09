@@ -20,7 +20,7 @@
         "url"   : "/",
         "banner": "", "banner_alt": "",
         "icon"  : "", "icon_alt": "",
-        "desc"  : "The \"Ground to Cloud\" project ",
+        "desc"  : "The \"Ground to Cloud\" project is a web app for exploring academic research on the global infrastructures of artificial intelligence, from the extraction of rare elements to the administration of data centers.",
         "tags"  : ["2024", "web", "code", "UCSB"]
     }
 }
