@@ -2,7 +2,7 @@
     "huml_site": {
         "title" : "UCSB Center for the Humanities and Machine Learning (HUML) Website",
         "url"   : "https://huml.ucsb.edu",
-        "banner": "huml_hero.png", "banner_alt": "vector drawing of a GPU",
+        "banner": "huml_hero", "banner_alt": "vector drawing of a GPU",
         "icon"  : "", "icon_alt": "",
         "desc"  : "As a graduate student researcher, I designed the website for UC Santa Barbara's Center for the Humanities and Machine Learning. Visit to see upcoming events, recent publications, and more.",
         "tags"  : ["2024", "web", "UCSB"]
