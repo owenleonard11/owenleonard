@@ -1,0 +1,113 @@
+{
+    "sections": [
+        {
+            "title": "Education",
+            "entries": [
+                {
+                    "date": "2024 –",
+                    "bold": "PhD Student",
+                    "norm": ", Department of English",
+                    "undr": "University of California, Santa Barbara"
+                },
+                {
+                    "date": "2024 –",
+                    "bold": "PhD Student",
+                    "norm": ", Department of English",
+                    "undr": "University of Miami"
+                }
+            ]
+        },
+        {
+            "title": "Research",
+            "entries": [
+                {
+                    "date": "2024 –",
+                    "bold": "Graduate Research Assistant",
+                    "norm": ", Center for the Humanities and Machine Learning",
+                    "undr": "UC Santa Barbara, with PIs Fabian Offert and Rita Raley",
+                    "href": "https://huml.ucsb.edu"
+                },
+                {
+                    "date": "2022",
+                    "bold": "Undergraduate Research Assistant",
+                    "norm": "",
+                    "undr": "University of Miami, with Lindsay Thomas"
+                }
+            ]
+        },
+        {
+            "title": "Public Scholarship",
+            "entries": [
+                {
+                    "date": "2024",
+                    "bold": "Ground to Cloud",
+                    "norm": ": A Gallery of AI Infrastructure",
+                    "href": "https://g2c.owenleonard.dev"
+                },
+                {
+                    "date": "2024",
+                    "bold": "Critical AI",
+                    "norm": ": A Funding Landscape Report",
+                    "href": "https://huml.ucsb.edu/report"
+                }
+            ]
+        },
+        {
+            "title": "Grants & Fellowships",
+            "entries": [
+                {
+                    "date": "2024 – 2029",
+                    "bold": "Regents Fellowship in English",
+                    "norm": "",
+                    "undr": "Department of English, UC Santa Barbara"
+                },
+                {
+                    "date": "2024",
+                    "bold": "Yvonne Gartrell Award",
+                    "norm": "",
+                    "undr": "Graduate Division, UC Santa Barbara"
+                }
+            ]
+        },
+        {
+            "title": "Honors & Awards",
+            "entries": [
+                {
+                    "date": "2023",
+                    "bold": "Departmental Honors in English",
+                    "norm": ", for undergraduate honors thesis",
+                    "undr": "Department of English, University of Miami"
+                },
+                {
+                    "date": "2021",
+                    "bold": "Robert M. Healy Award",
+                    "norm": ", for best undergraduate essay in humanities",
+                    "undr": "College of Arts & Sciences, University of Miami"
+                }
+            ]
+        },
+        {
+            "title": "Select Technical Experience",
+            "entries": [
+                {
+                    "date": "2023",
+                    "bold": "Software Validation and Verification Intern",
+                    "norm": "",
+                    "undr": "Dexcom Continuous Glucose Monitoring, San Diego CA"
+                },
+                {
+                    "date": "2020 – 2021",
+                    "bold": "Software Engineer",
+                    "norm": "",
+                    "undr": "Harmelin Media, Bala Cynwyd PA"
+                },
+                {
+                    "date": "2019",
+                    "bold": "Data Science Intern",
+                    "norm": "",
+                    "undr": "University of Pennsylvania Health System, Philadelphia PA"
+                }
+            ]
+        }
+    ]
+}
