@@ -7,13 +7,15 @@
                     "date": "2024 –",
                     "bold": "PhD Student",
                     "norm": ", Department of English",
-                    "undr": "University of California, Santa Barbara"
+                    "undr": "University of California, Santa Barbara",
+                    "side": "As a PhD student at the University of California, Santa Barbara, I study critical AI and critical machine learning, the cultural logic of computation, and twentieth-century modernism and its implications for the digital present."
                 },
                 {
-                    "date": "2024 –",
-                    "bold": "PhD Student",
-                    "norm": ", Department of English",
-                    "undr": "University of Miami"
+                    "date": "2020 – 2023",
+                    "bold": "Bachelor of Science",
+                    "norm": ", Computer Science and English Literature",
+                    "undr": "University of Miami",
+                    "side": "I graduated from the University of Miami in 2023 with a B.S. in Computer Science with an additional major in English Literature."
                 }
             ]
         },
@@ -25,13 +27,15 @@
                     "bold": "Graduate Research Assistant",
                     "norm": ", Center for the Humanities and Machine Learning",
                     "undr": "UC Santa Barbara, with PIs Fabian Offert and Rita Raley",
-                    "href": "https://huml.ucsb.edu"
+                    "href": "https://huml.ucsb.edu",
+                    "side": "In collaboration with PIs Fabian Offert and Rita Raley, I am exploring the intersection of artificial intelligence and humanistic inquiry at the Center for Humanities and Machine Learning."
                 },
                 {
                     "date": "2022",
                     "bold": "Undergraduate Research Assistant",
                     "norm": "",
-                    "undr": "University of Miami, with Lindsay Thomas"
+                    "undr": "University of Miami, with Lindsay Thomas",
+                    "side": "As a research assistant for Lindsay Thomas, I developed applications in scientific Python for analysis of a large corpus of literary texts on HathiTrust and created command-line tools to help researchers in the humanities with classification of poorly structured data. I also wrote scripts to scrape information from social media platforms like TikTok in compliance with restrictive guidelines on automated access."
                 }
             ]
         },
@@ -42,13 +46,15 @@
                     "date": "2024",
                     "bold": "Ground to Cloud",
                     "norm": ": A Gallery of AI Infrastructure",
-                    "href": "https://g2c.owenleonard.dev"
+                    "href": "https://g2c.owenleonard.dev",
+                    "side": "G2C provides a unique visual interface for scholarship on the globe-spanning interfaces that support contemporary artificial intelligence."
                 },
                 {
                     "date": "2024",
                     "bold": "Critical AI",
                     "norm": ": A Funding Landscape Report",
-                    "href": "https://huml.ucsb.edu/report"
+                    "href": "https://huml.ucsb.edu/report",
+                    "side": "This report provides an overview of the funding landscape for critical AI research in the humanities and offers recommendations for existing projects."
                 }
             ]
         },
@@ -59,13 +65,15 @@
                     "date": "2024 – 2029",
                     "bold": "Regents Fellowship in English",
                     "norm": "",
-                    "undr": "Department of English, UC Santa Barbara"
+                    "undr": "Department of English, UC Santa Barbara",
+                    "side": "My Regents Fellowship in English includes two academic years of stipendiary support, one summer stipend, and three years of academic employment."
                 },
                 {
                     "date": "2024",
                     "bold": "Yvonne Gartrell Award",
                     "norm": "",
-                    "undr": "Graduate Division, UC Santa Barbara"
+                    "undr": "Graduate Division, UC Santa Barbara",
+                    "side": "My Yvonne Gartrell Award includes a supplementary stipend of $2,500."
                 }
             ]
         },
@@ -76,13 +84,15 @@
                     "date": "2023",
                     "bold": "Departmental Honors in English",
                     "norm": ", for undergraduate honors thesis",
-                    "undr": "Department of English, University of Miami"
+                    "undr": "Department of English, University of Miami",
+                    "side": "I received departmental honors for my thesis \"Drama, Life, and Stephen Dedalus: The Fate of Aestheticism in Joyce\", in which I present Joyce's career as a process of growing disillusionment with the idea that aesthetic writing is capable of transcending its historical and material confines."
                 },
                 {
                     "date": "2021",
                     "bold": "Robert M. Healy Award",
                     "norm": ", for best undergraduate essay in humanities",
-                    "undr": "College of Arts & Sciences, University of Miami"
+                    "undr": "College of Arts & Sciences, University of Miami",
+                    "side": "I received the Healy Award for my paper \"Portrait of What, Exactly? Metonymic Contrast and Authorial Discontent in Joyce's A Portrait\", an analysis of Stephen Dedalus's aesthetic theories that understands their deficiencies as the completion of the novel's metonymic project."
                 }
             ]
         },
@@ -93,19 +103,22 @@
                     "date": "2023",
                     "bold": "Software Validation and Verification Intern",
                     "norm": "",
-                    "undr": "Dexcom Continuous Glucose Monitoring, San Diego CA"
+                    "undr": "Dexcom Continuous Glucose Monitoring, San Diego CA",
+                              "side": "As an intern for DexCom, I automated critical elements of software testing infrastructure using Java, Kotlin, and JUnit by creating convenient interfaces for remote device interaction. I refactored existing code to support parallel testing on multiple devices through Github actions."
                 },
                 {
                     "date": "2020 – 2021",
                     "bold": "Software Engineer",
                     "norm": "",
-                    "undr": "Harmelin Media, Bala Cynwyd PA"
+                    "undr": "Harmelin Media, Bala Cynwyd PA",
+                    "side": "As a software engineer, I built a custom self-managed deployment of the Elastic Stack (formerly the ELK stack) on Amazon Web Services to support full-text search as well as log aggregation, indexing, and data visualization of intranet activity. I streamlined continuous integration/continuous delivery flows using Python and CodeDeploy to deploy applications on EC2."
                 },
                 {
                     "date": "2019",
                     "bold": "Data Science Intern",
                     "norm": "",
-                    "undr": "University of Pennsylvania Health System, Philadelphia PA"
+                    "undr": "University of Pennsylvania Health System, Philadelphia PA",
+                    "side": "As a data science intern, I created a Jupyter-based application for monitoring predictive model degradation. I leveraged libraries like scikit-learn, pandas, and matplotlib to diagnose potential weak points in existing models and guide the development of new models. I successfully containerized and integrated the system into the team's developer intranet frontend."
                 }
             ]
         }

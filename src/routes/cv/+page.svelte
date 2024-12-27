@@ -5,7 +5,8 @@
     import type { ToastSettings, ModalSettings, ModalComponent } from "@skeletonlabs/skeleton";
     import { beforeNavigate } from "$app/navigation";
 
-    import * as cv from "$lib/text/cv_new.json"
+    import '@fortawesome/fontawesome-free/css/all.min.css';
+    import * as cv from "$lib/text/cv_text.json"
     import CvModal from "$lib/components/CVModal.svelte";
 
     let innerWidth=0;
@@ -50,26 +51,28 @@
             <span>|</span>
             <a class="hover:anchor" href="mailto:owenleonard11@gmail.com">owenleonard11@gmail.com</a>
         </p>
-        <div class="mt-2 border-t-2 border-primary-600"/>
-        {#each cv.sections as section}
+        {#each cv.sections as section, s_index}
             <p class="text-lg md:text-xl font-bold mt-2 text-left">{section.title}</p>
-            {#each section.subsections as subsection}
-                <div class="text-sm md:text-base">
-                    <p class="font-bold">
-                        <span class="mr-2">{subsection.title}</span>
-                        <span class="text-slate-700">{subsection.alt}</span>
-                    </p>
-                    {#each subsection.entries as entry}
+            <div class="border-t-2 border-primary-600"/>
+            <div class="text-lg">
+                {#each section.entries as entry, e_index}
+                    <div class="grid grid-cols grid-cols-5">
+                        <div class="col-span-1 py-0.5">{entry.date}</div>
                         <button 
-                            on:click={innerWidth >= 1024 ? setEntryVisible(entry.position) : triggerSideModal(entry.side)}
-                            class="flex w-full hover:shadow-lg {entryVisible == entry.position ? "bg-secondary-300 shadow-lg" : ""}"
+                            on:click={setEntryVisible(`${s_index}${e_index}`)}
+                            class="text-left col-span-4 hover:bg-primary-400 py-0.5 rounded-md"
                         >
-                            <div class="mr-auto text-left">{entry.position}{innerWidth >= 768 ? "" : ", " + entry.date}</div>
-                            <div class="ml-4 text-right hidden md:flex">{entry.date}</div>
+                            <strong>{entry.bold}</strong>{entry.norm}
                         </button>
-                    {/each}
-                </div>
-            {/each}
+                    </div>      
+                    {#if 'undr' in entry}
+                        <div class="grid grid-cols grid-cols-5">
+                            <div class="col-span-1"></div>
+                            <div class="col-span-4 text-slate-700"><em>{entry.undr}</em></div>
+                        </div>
+                    {/if}
+                {/each}
+            </div>
         {/each}
     </div>
     <div class="order-1 mx-8 my-4 lg:order-2 lg:m-8 lg:ml-0">
@@ -80,15 +83,27 @@
                 click here to download
             </a>.
         </div>
-        {#each cv.sections as section}
-            {#each section.subsections as subsection}
-                {#each subsection.entries as entry}
-                    {#if entry.position == entryVisible}
-                        <div transition:slide class="text-lg card p-4 ml-0 w-[30vw] rounded-lg bg-primary-300 border-primary-600 border-2 hidden mt-4 lg:block">
-                            {@html entry.side}
+        {#each cv.sections as section, s_index}
+            {#each section.entries as entry, e_index}
+                {#if entryVisible == `${s_index}${e_index}`}
+                    <div 
+                        transition:slide
+                        class="card lg:text-lg p-4 lg:w-[30vw] rounded-lg bg-primary-300 border-primary-600 border-2 mt-2"
+                    >   
+                        <div>
+                            {entry.side}
                         </div>
-                    {/if}
-                {/each}
+                        {#if 'href' in entry}
+                            <div>
+                                <a href={entry.href} target="_blank" class="anchor mb-2">
+                                    {entry.href}
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                                </a>
+                            </div>
+                        {/if}
+                        
+                    </div>
+                {/if}
             {/each}
         {/each}
     </div>
