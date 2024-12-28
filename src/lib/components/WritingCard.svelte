@@ -36,4 +36,4 @@
     </svelte:fragment>
 </AccordionItem>
 
-<div class="border-t-2 border-primary-600 mx-4"></div>
+<div class="border-t-2 border-primary-700 mx-4"></div>
