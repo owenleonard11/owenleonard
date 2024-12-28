@@ -13,7 +13,7 @@
             </div>
         </div>
     </header>
-    <footer class="p-2 md:p-4 border-t-2 border-primary-500">
+    <footer class="p-2 md:p-4 border-t-2 border-primary-700">
         <p class="text-xl md:text-2xl lg:text-4xl font-semibold mx-4">{text}&nbsp;→</p>
     </footer>
 </a>

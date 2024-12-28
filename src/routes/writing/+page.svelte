@@ -16,7 +16,7 @@
             and download a PDF where possible.
         </p>
     </div>
-    <div class="border-t-2 border-primary-600 mx-4"></div>
+    <div class="border-t-2 border-primary-700 mx-4"></div>
     <Accordion>
         <WritingCard writing={writings.ulysses_supercomputer} open={isOpen('ulysses')}/>
         <WritingCard writing={writings.drama_life_dedalus} open={isOpen('drama')}/>
