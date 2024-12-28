@@ -13,8 +13,8 @@
     let entryVisible: string = ""; 
 
     const modalStore = getModalStore();
-    const triggerSideModal = (side: any) => {
-        const modalComponent: ModalComponent = { ref: CvModal, props: { side: side}}
+    const triggerSideModal = (side: string, href: string) => {
+        const modalComponent: ModalComponent = { ref: CvModal, props: { side: side, href:href}}
         const sideModal: ModalSettings = {
             type: 'component',
             component: modalComponent
@@ -22,12 +22,12 @@
         modalStore.trigger(sideModal)
     };
 
-    const handleEntryClick = (uid: any, side: any) => {
+    const handleEntryClick = (uid: any, entry: any) => {
         if (innerWidth >= 1024) {
             entryVisible = uid;
         }
         else {
-            triggerSideModal(side);
+            triggerSideModal(entry.side, entry.href);
         }
     }
 
@@ -66,7 +66,7 @@
                     <div class="grid grid-cols grid-cols-5">
                         <div class="col-span-1 py-0.5">{entry.date}</div>
                         <button 
-                            on:click={() => handleEntryClick(`${s_index}${e_index}`, entry.side)}
+                            on:click={() => handleEntryClick(`${s_index}${e_index}`, entry)}
                             class="text-left col-span-4 hover:bg-primary-400 py-0.5 rounded-md
                             {entryVisible == `${s_index}${e_index}` && innerWidth >= 1024 ? 'bg-primary-400' : ''}"
                         >
@@ -102,12 +102,10 @@
                             {entry.side}
                         </div>
                         {#if 'href' in entry}
-                            <div>
-                                <a href={entry.href} target="_blank" class="anchor mb-2">
-                                    {entry.href}
-                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
-                                </a>
-                            </div>
+                            <a href={entry.href} target="_blank" class="anchor mb-2">
+                                {entry.href}
+                                <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            </a>
                         {/if}
                     </div>
                 {/if}
