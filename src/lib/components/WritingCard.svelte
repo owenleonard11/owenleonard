@@ -2,10 +2,11 @@
     import { AccordionItem } from "@skeletonlabs/skeleton";
 
     export let writing;
+    export let open: boolean;
     let { title, info, desc, link, pdf } = writing;
 </script>
 
-<AccordionItem>
+<AccordionItem open={open}>
     <svelte:fragment slot="summary">
         <span class="text-xl md:text-2xl font-medium mr-2">{title}</span>
         <span class="inline-block text-xl text-slate-800">{info}</span>
@@ -20,14 +21,14 @@
         <p class="text-base md:text-lg lg:text-xl">{@html desc}</p>
         {#if link}
         <div>
-            <a class="btn p-0 text-base md:text-lg lg:text-xl hover:text-slate-700" target="_blank" href="{link}">
+            <a class="anchor p-0 text-base md:text-lg lg:text-xl" target="_blank" href="{link}">
                 View online
                 <i class="ml-2 fa-solid fa-arrow-up-right-from-square text-sm md:text-base"></i>
             </a>
         </div>
         {/if}
         {#if pdf}
-            <a class="btn p-0 text-base md:text-lg lg:text-xl hover:text-slate-700" target="_blank" href="{pdf}">
+            <a class="anchor p-0 text-base md:text-lg lg:text-xl" target="_blank" href="{pdf}">
                 Download PDF 
                 <i class="ml-2 fa-solid fa-arrow-up-right-from-square text-xs md:text-sm lg:text-base"></i>
             </a>
