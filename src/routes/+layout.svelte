@@ -16,11 +16,14 @@
 </script>
 
 <svelte:head>
-	<!-- <link rel="icon" type="image/png" href="{base}/static/favicon-48x48.png" sizes="48x48" /> --->
-	<!-- <link rel="icon" type="image/svg+xml" href="{base}/static/favicon.svg" /> --->
-	<!-- <link rel="shortcut icon" href="{base}/static/favicon.ico" /> --->
-	<!-- <link rel="apple-touch-icon" sizes="180x180" href="{base}/static/apple-touch-icon.png" /> --->
-	<!-- <link rel="manifest" href="{base}/static/site.webmanifest" /> --->
+	<link rel="icon" type="image/png" href="/src/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+	<link rel="shortcut icon" href="/src/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="Owen" />
+	<link rel="manifest" href="/src/site.webmanifest" />
+	<meta name="title" content="Owen Leonard | Writer and Critic at UCSB English" />
+	<meta name="description" content="Owen Leonard is a PhD student in English at UC Santa Barbara who writes about artificial intelligence, electronic literature, and visual culture. Visit owenleonard.dev to see critical writing, programming projects, and other updates." />
 </svelte:head>
 
 <Toast background="variant-filled bg-warning"/>
@@ -51,6 +54,10 @@
 					<p>read my writing</p>
 				</li>
 				<li>
+					<a href="{base}/cv" on:click={closeDrawer}>cv →</a>
+					<p>view my CV</p>
+				</li>
+				<li>
 					<a href="{base}/about" on:click={closeDrawer}>about →</a>
 					<p>find out more</p>
 				</li>
@@ -74,6 +81,7 @@
 			<ul>
 				<li class="hidden lg:inline m-2"><a href="{base}/projects">projects</a></li>
 				<li class="hidden lg:inline m-2"><a href="{base}/writing">writing</a></li>
+				<li class="hidden lg:inline m-2"><a href="{base}/cv">cv</a></li>
 				<li class="hidden lg:inline m-2"><a href="{base}/about">about</a></li>
 				<li class="inline ml-2"><a href="https://github.com/owenleonard11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
 				<li class="inline ml-2"><a href="https://orcid.org/0009-0007-4386-5628" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>

@@ -85,6 +85,7 @@
                     "bold": "Departmental Honors in English",
                     "norm": ", for undergraduate honors thesis",
                     "undr": "Department of English, University of Miami",
+                    "href": "https://owenleonard.dev/writing?open=ulysses",
                     "side": "I received departmental honors for my thesis \"Drama, Life, and Stephen Dedalus: The Fate of Aestheticism in Joyce\", in which I present Joyce's career as a process of growing disillusionment with the idea that aesthetic writing is capable of transcending its historical and material confines."
                 },
                 {
@@ -92,6 +93,7 @@
                     "bold": "Robert M. Healy Award",
                     "norm": ", for best undergraduate essay in humanities",
                     "undr": "College of Arts & Sciences, University of Miami",
+                    "href": "https://owenleonard.dev/writing?open=drama",
                     "side": "I received the Healy Award for my paper \"Portrait of What, Exactly? Metonymic Contrast and Authorial Discontent in Joyce's A Portrait\", an analysis of Stephen Dedalus's aesthetic theories that understands their deficiencies as the completion of the novel's metonymic project."
                 }
             ]
@@ -104,7 +106,7 @@
                     "bold": "Software Validation and Verification Intern",
                     "norm": "",
                     "undr": "Dexcom Continuous Glucose Monitoring, San Diego CA",
-                              "side": "As an intern for DexCom, I automated critical elements of software testing infrastructure using Java, Kotlin, and JUnit by creating convenient interfaces for remote device interaction. I refactored existing code to support parallel testing on multiple devices through Github actions."
+                    "side": "As an intern for DexCom, I automated critical elements of software testing infrastructure using Java, Kotlin, and JUnit by creating convenient interfaces for remote device interaction. I refactored existing code to support parallel testing on multiple devices through Github actions."
                 },
                 {
                     "date": "2020 – 2021",

@@ -10,19 +10,26 @@
     import CvModal from "$lib/components/CVModal.svelte";
 
     let innerWidth=0;
-
     let entryVisible: string = ""; 
-    const setEntryVisible = (uid: any) => { return () => entryVisible = uid; };
 
     const modalStore = getModalStore();
-    const triggerSideModal = (side: any) => {
-        const modalComponent: ModalComponent = { ref: CvModal, props: { side: side}}
+    const triggerSideModal = (side: string, href: string) => {
+        const modalComponent: ModalComponent = { ref: CvModal, props: { side: side, href:href}}
         const sideModal: ModalSettings = {
             type: 'component',
             component: modalComponent
         }
-        return () => { modalStore.trigger(sideModal) }
+        modalStore.trigger(sideModal)
     };
+
+    const handleEntryClick = (uid: any, entry: any) => {
+        if (innerWidth >= 1024) {
+            entryVisible = uid;
+        }
+        else {
+            triggerSideModal(entry.side, entry.href);
+        }
+    }
 
     const toastStore = getToastStore();
     const mobileWarningToast: ToastSettings = {
@@ -33,7 +40,7 @@
     }
 
     onMount(() => {
-        if (innerWidth < 768) {
+        if (innerWidth <= 768) {
             toastStore.trigger(mobileWarningToast);
         }
     })
@@ -52,15 +59,16 @@
             <a class="hover:anchor" href="mailto:owenleonard11@gmail.com">owenleonard11@gmail.com</a>
         </p>
         {#each cv.sections as section, s_index}
-            <p class="text-lg md:text-xl font-bold mt-2 text-left">{section.title}</p>
+            <p class="sm:text-lg md:text-xl font-bold mt-2 text-left">{section.title}</p>
             <div class="border-t-2 border-primary-600"/>
-            <div class="text-lg">
+            <div class="text-sm md:text-lg">
                 {#each section.entries as entry, e_index}
                     <div class="grid grid-cols grid-cols-5">
                         <div class="col-span-1 py-0.5">{entry.date}</div>
                         <button 
-                            on:click={setEntryVisible(`${s_index}${e_index}`)}
-                            class="text-left col-span-4 hover:bg-primary-400 py-0.5 rounded-md"
+                            on:click={() => handleEntryClick(`${s_index}${e_index}`, entry)}
+                            class="text-left col-span-4 hover:bg-primary-400 py-0.5 rounded-md
+                            {entryVisible == `${s_index}${e_index}` && innerWidth >= 1024 ? 'bg-primary-400' : ''}"
                         >
                             <strong>{entry.bold}</strong>{entry.norm}
                         </button>
@@ -85,7 +93,7 @@
         </div>
         {#each cv.sections as section, s_index}
             {#each section.entries as entry, e_index}
-                {#if entryVisible == `${s_index}${e_index}`}
+                {#if entryVisible == `${s_index}${e_index}` && innerWidth >= 1024}
                     <div 
                         transition:slide
                         class="card lg:text-lg p-4 lg:w-[30vw] rounded-lg bg-primary-300 border-primary-600 border-2 mt-2"
@@ -94,12 +102,10 @@
                             {entry.side}
                         </div>
                         {#if 'href' in entry}
-                            <div>
-                                <a href={entry.href} target="_blank" class="anchor mb-2">
-                                    {entry.href}
-                                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
-                                </a>
-                            </div>
+                            <a href={entry.href} target="_blank" class="anchor mb-2">
+                                {entry.href}
+                                <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            </a>
                         {/if}
                     </div>
                 {/if}
