@@ -16,11 +16,12 @@
 </script>
 
 <svelte:head>
-	<!-- <link rel="icon" type="image/png" href="{base}/static/favicon-48x48.png" sizes="48x48" /> --->
-	<!-- <link rel="icon" type="image/svg+xml" href="{base}/static/favicon.svg" /> --->
-	<!-- <link rel="shortcut icon" href="{base}/static/favicon.ico" /> --->
-	<!-- <link rel="apple-touch-icon" sizes="180x180" href="{base}/static/apple-touch-icon.png" /> --->
-	<!-- <link rel="manifest" href="{base}/static/site.webmanifest" /> --->
+	<link rel="icon" type="image/png" href="/static/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
+	<link rel="shortcut icon" href="/static/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="Owen" />
+	<link rel="manifest" href="/static/site.webmanifest" />
 </svelte:head>
 
 <Toast background="variant-filled bg-warning"/>
