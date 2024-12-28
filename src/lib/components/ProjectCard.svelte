@@ -9,10 +9,10 @@
 
 <a 
     on:focus={() => expand=true} on:focusout={() => expand=false} on:mouseenter={() => expand=true} on:mouseleave={() => expand=false} 
-    class="card card-hover h-auto max-w-full bg-primary-400 border-2 border-primary-700 rounded-lg" href={url} target="_blank"
+    class="card card-hover h-auto max-w-full bg-primary-300 border-2 border-primary-700 rounded-lg" href={url} target="_blank"
 >
     {#if banner}
-        <div class="px-4 pt-4 border-b-2 border-primary-500">
+        <div class="px-4 pt-4 border-b-2 border-primary-700">
             {#await import(`$lib/images/projects/${banner}.png`) then { default: src }}
                 <img {src} alt={banner_alt} class="h-auto max-w-full rounded-t-md"/>
             {/await} 
