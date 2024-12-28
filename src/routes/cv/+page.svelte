@@ -60,7 +60,8 @@
                         <div class="col-span-1 py-0.5">{entry.date}</div>
                         <button 
                             on:click={setEntryVisible(`${s_index}${e_index}`)}
-                            class="text-left col-span-4 hover:bg-primary-400 py-0.5 rounded-md"
+                            class="text-left col-span-4 hover:bg-primary-400 py-0.5 rounded-md 
+                            {entryVisible == `${s_index}${e_index}` ? 'bg-primary-400' : ''}"
                         >
                             <strong>{entry.bold}</strong>{entry.norm}
                         </button>
