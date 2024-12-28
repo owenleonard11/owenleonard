@@ -51,6 +51,10 @@
 					<p>read my writing</p>
 				</li>
 				<li>
+					<a href="{base}/cv" on:click={closeDrawer}>cv →</a>
+					<p>view my CV</p>
+				</li>
+				<li>
 					<a href="{base}/about" on:click={closeDrawer}>about →</a>
 					<p>find out more</p>
 				</li>
@@ -74,6 +78,7 @@
 			<ul>
 				<li class="hidden lg:inline m-2"><a href="{base}/projects">projects</a></li>
 				<li class="hidden lg:inline m-2"><a href="{base}/writing">writing</a></li>
+				<li class="hidden lg:inline m-2"><a href="{base}/cv">cv</a></li>
 				<li class="hidden lg:inline m-2"><a href="{base}/about">about</a></li>
 				<li class="inline ml-2"><a href="https://github.com/owenleonard11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
 				<li class="inline ml-2"><a href="https://orcid.org/0009-0007-4386-5628" target="_blank"><i class="fa-brands fa-orcid"></i></a></li>
