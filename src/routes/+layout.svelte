@@ -20,7 +20,6 @@
 	<link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
 	<link rel="shortcut icon" href="/src/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png" />
-	<meta name="apple-mobile-web-app-title" content="Owen" />
 	<link rel="manifest" href="/src/site.webmanifest" />
 	<meta name="title" content="Owen Leonard | Writer and Critic at UCSB English" />
 	<meta name="description" content="Owen Leonard is a PhD student in English at UC Santa Barbara who writes about artificial intelligence, electronic literature, and visual culture. Visit owenleonard.dev to see critical writing, programming projects, and other updates." />
