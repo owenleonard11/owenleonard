@@ -7,20 +7,20 @@
         "desc"  : "As a graduate student researcher, I designed the website for UC Santa Barbara's Center for the Humanities and Machine Learning. Visit to see upcoming events, recent publications, and more.",
         "tags"  : ["2024", "web", "UCSB"]
     },
-    "glowing_brains": {
-        "title" : "A Sea of Glowing Brains",
-        "url"   : "/",
-        "banner": "", "banner_alt": "",
+    "g2c": {
+        "title" : "Ground to Cloud: A Gallery of AI Infrastructure",
+        "url"   : "https://g2c.owenleonard.dev",
+        "banner": "g2c_screencap", "banner_alt": "screenshot of a web page showing text and an image of a mining complex",
         "icon"  : "", "icon_alt": "",
-        "desc"  : "\"A Sea of Glowing Brains: The Iconography of AI\" collects logos, banner images, and book covers from across academic and corporate artificial intelligence. Analysis of these images, especially the ubiquitous motif of the glowing brain, offers unique insight into the ideology of AI.",
+        "desc"  : "Ground to Cloud (G2C) brings together scholarly research and investigative journalism on the vast array of infrastructure that supports contemporary artificial intelligence, with a focus on specific sites and forms of labor.",
         "tags"  : ["2024", "web", "code", "personal"]
     },
-    "ai_infrastructure": {
-        "title" : "AI Infrastructure: From Ground to Cloud",
-        "url"   : "/",
+    "huml_report": {
+        "title" : "Report: The 2024 Critical AI Funding Landscape",
+        "url"   : "https://huml.ucsb.edu/report",
         "banner": "", "banner_alt": "",
         "icon"  : "", "icon_alt": "",
-        "desc"  : "The \"Ground to Cloud\" project is a web app for exploring academic research on the global infrastructures of artificial intelligence, from the extraction of rare elements to the administration of data centers.",
-        "tags"  : ["2024", "web", "code", "UCSB"]
+        "desc"  : "This report, prepared by graduate researcher Owen Leonard, provides an overview of Critical Artificial Intelligence funding in the United States—from major academic research initiatives to community-center workshops—and offers recommendations for researchers to maximize relevance and impact.",
+        "tags"  : ["2024", "web", "UCSB"]
     }
 }
