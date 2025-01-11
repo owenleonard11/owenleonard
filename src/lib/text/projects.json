@@ -18,7 +18,7 @@
     "huml_report": {
         "title" : "Report: The 2024 Critical AI Funding Landscape",
         "url"   : "https://huml.ucsb.edu/report",
-        "banner": "", "banner_alt": "",
+        "banner": "report_screencap", "banner_alt": "a screenshot of text on a web page",
         "icon"  : "", "icon_alt": "",
         "desc"  : "This report, prepared by graduate researcher Owen Leonard, provides an overview of Critical Artificial Intelligence funding in the United States—from major academic research initiatives to community-center workshops—and offers recommendations for researchers to maximize relevance and impact.",
         "tags"  : ["2024", "web", "UCSB"]
