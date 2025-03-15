@@ -22,5 +22,13 @@
         "icon"  : "", "icon_alt": "",
         "desc"  : "This report, prepared by graduate researcher Owen Leonard, provides an overview of Critical Artificial Intelligence funding in the United States—from major academic research initiatives to community-center workshops—and offers recommendations for researchers to maximize relevance and impact.",
         "tags"  : ["2024", "web", "UCSB"]
+    },
+    "chronicling": {
+        "title" : "Chronicling America Utilities", 
+        "url"   : "https://github.com/owenleonard11/chronam-utils",
+        "banner": "chronicling_america", "banner_alt": "a screenshot of the Chronicling America homepage on loc.gov",
+        "icon"  : "", "icon_alt": "",
+        "desc"  : "This open-source repository contains modules that provide automated access to the Chronicling America database of historical newspapers.",
+        "tags"  : ["2025", "code", "personal"]
     }
 }

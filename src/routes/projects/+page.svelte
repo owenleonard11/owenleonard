@@ -10,5 +10,6 @@
     </div>
     <div class="flex flex-col gap-4 lg:gap-8 w-full lg:w-1/2">
         <ProjectCard project={projects.huml_report} />
+        <ProjectCard project={projects.chronicling} />
     </div>
 </div>
