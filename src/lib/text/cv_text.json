@@ -23,6 +23,14 @@
             "title": "Research",
             "entries": [
                 {
+                    "date": "2025",
+                    "bold": "Research Mentor",
+                    "norm": "",
+                    "undr": "UC Santa Barbara Summer Research Mentorship Program",
+                    "href": "https://www.summer.ucsb.edu/programs/research-mentorship-program/overview",
+                    "side": "As a research mentor, I will guide high-school students through a project evaluating retrieval-augmented generation as a tool for cultural and historical research."
+                },
+                {
                     "date": "2024 –",
                     "bold": "Graduate Research Assistant",
                     "norm": ", Center for the Humanities and Machine Learning",
@@ -36,6 +44,19 @@
                     "norm": "",
                     "undr": "University of Miami, with Lindsay Thomas",
                     "side": "As a research assistant for Lindsay Thomas, I developed applications in scientific Python for analysis of a large corpus of literary texts on HathiTrust and created command-line tools to help researchers in the humanities with classification of poorly structured data. I also wrote scripts to scrape information from social media platforms like TikTok in compliance with restrictive guidelines on automated access."
+                }
+            ]
+        },
+        {
+            "title": "Presentations & Publications",
+            "entries": [
+                {
+                    "date": "2025",
+                    "bold": "The Global Perception Stack",
+                    "norm": "",
+                    "undr": "Cultural Politics of the Computational Image",
+                    "href": "https://globalmediations.mit.edu/cpci-abstracts/#Leonard",
+                    "side": "My presentation on the 'global perception stack' articulated an understanding of AI-generated images as indexes of global labor and infrastructure rather than of their ostensible subjects."
                 }
             ]
         },
