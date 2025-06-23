@@ -36,4 +36,4 @@ jobs:
       
       - name: Sync cv.pdf to S3
         run: |
-          aws s3 cp cv.pdf s3://owenleonard-dev-assets/cv.pdf
+          aws s3 cp cv_base.pdf s3://owenleonard-dev-assets/cv.pdf
