@@ -25,7 +25,7 @@ jobs:
       - name: Compile cv.pdf
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: src/lib/text/cv.tex
+          root_file: src/lib/text/cv_base.tex
 
       - name: Setup AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
