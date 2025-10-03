@@ -20,6 +20,48 @@
             ]
         },
         {
+            "title": "Presentations & Publications",
+            "entries": [
+                {
+                    "date": "2025",
+                    "bold": "CAPTCHA as Speculative Fiction",
+                    "norm": "",
+                    "undr": "Speculative Fiction Across Media (SFAM) 2025",
+                    "href": "https://sfamla.org/schedule-2025/",
+                    "side": "My presentation at 4S 2025 Seattle discussed hardware random number generators, which extract entropy from physical processes, and their implications for the supposedly deterministic character of digital computing.."
+                },
+                {
+                    "date": "2025",
+                    "bold": "Minds, Brains, and Random Bits",
+                    "norm": "",
+                    "undr": "Society for the Social Study of Science (4S) 2025",
+                    "href": "https://www.4sonline.org/final_program_seattle.php",
+                    "side": "My presentation at 4S 2025 Seattle discussed hardware random number generators, which extract entropy from physical processes, and their implications for the supposedly deterministic character of digital computing.."
+                },
+                {
+                    "date": "2025",
+                    "bold": "The Global Perception Stack",
+                    "norm": "",
+                    "undr": "Cultural Politics of the Computational Image",
+                    "href": "https://globalmediations.mit.edu/cpci-abstracts/\\#Leonard",
+                    "side": "My presentation on the 'global perception stack' articulated an understanding of AI-generated images as indexes of global labor and infrastructure rather than of their ostensible subjects."
+                }
+            ]
+        },
+        {
+            "title": "Teaching",
+            "entries": [
+                {
+                    "date": "2025",
+                    "bold": "Critical AI",
+                    "norm": "(undergraduate lecture)",
+                    "undr": "Teaching Assistant, UCSB English",
+                    "href": "https://www.english.ucsb.edu/courses/fall2025/engl-155ai/",
+                    "side": "I co-designed and co-lectured with Profs. Rita Raley and Fabian Offert for the inaugral interdisciplinary undergraduate lecture in 'Critical AI', which brought a socially and historicall informed perspective on machine learning to undergraduates from twelve different majors."
+                }
+            ]
+        },
+        {
             "title": "Research",
             "entries": [
                 {
@@ -44,19 +86,6 @@
                     "norm": "",
                     "undr": "University of Miami, with Lindsay Thomas",
                     "side": "As a research assistant for Lindsay Thomas, I developed applications in scientific Python for analysis of a large corpus of literary texts on HathiTrust and created command-line tools to help researchers in the humanities with classification of poorly structured data. I also wrote scripts to scrape information from social media platforms like TikTok in compliance with restrictive guidelines on automated access."
-                }
-            ]
-        },
-        {
-            "title": "Presentations & Publications",
-            "entries": [
-                {
-                    "date": "2025",
-                    "bold": "The Global Perception Stack",
-                    "norm": "",
-                    "undr": "Cultural Politics of the Computational Image",
-                    "href": "https://globalmediations.mit.edu/cpci-abstracts/\\#Leonard",
-                    "side": "My presentation on the 'global perception stack' articulated an understanding of AI-generated images as indexes of global labor and infrastructure rather than of their ostensible subjects."
                 }
             ]
         },
