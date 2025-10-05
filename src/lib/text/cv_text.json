@@ -26,7 +26,7 @@
                     "date": "2025",
                     "bold": "CAPTCHA as Speculative Fiction",
                     "norm": "",
-                    "undr": "Speculative Fiction Across Media 2025",
+                    "undr": "Speculative Fiction Across Media (SFAM) Los Angeles",
                     "href": "https://sfamla.org/schedule-2025/",
                     "side": "My presentation at 4S 2025 Seattle discussed hardware random number generators, which extract entropy from physical processes, and their implications for the supposedly deterministic character of digital computing.."
                 },
@@ -34,7 +34,7 @@
                     "date": "2025",
                     "bold": "Minds, Brains, and Random Bits",
                     "norm": "",
-                    "undr": "Society for the Social Study of Science 2025",
+                    "undr": "Society for the Social Study of Science (4S) Seattle",
                     "href": "https://www.4sonline.org/final_program_seattle.php",
                     "side": "My presentation at 4S 2025 Seattle discussed hardware random number generators, which extract entropy from physical processes, and their implications for the supposedly deterministic character of digital computing.."
                 },
@@ -93,7 +93,7 @@
             "title": "Public Scholarship",
             "entries": [
                 {
-                    "date": "2024",
+                    "date": "2025",
                     "bold": "Ground to Cloud",
                     "norm": ": A Gallery of AI Infrastructure",
                     "href": "https://g2c.owenleonard.dev",
