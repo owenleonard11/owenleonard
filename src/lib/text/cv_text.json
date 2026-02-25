@@ -15,12 +15,38 @@
                     "bold": "Bachelor of Science",
                     "norm": ", Computer Science and English Literature",
                     "undr": "University of Miami",
-                    "side": "I graduated from the University of Miami in 2023 with a B.S. in Computer Science with an additional major in English Literature."
+                    "side": "I graduated from the University of Miami in 2023 magna cum laude with a B.S. in Computer Science with an additional major in English Literature."
                 }
             ]
         },
         {
-            "title": "Presentations & Publications",
+            "title": "Publications",
+            "entries": [
+                {
+                    "date": "(forthc.)",
+                    "bold": "Circuit Hermeneutics: Mechanistic Interpretability as Humanistic Inquiry",
+                    "norm": ", with Fabian Offert and Rita Raley",
+                    "undr": "Cambridge Forum on AI",
+                    "side": ""
+                },
+                {
+                    "date": "(forthc.)",
+                    "bold": "Digitisation, Remediation, and the History of OCR Correction",
+                    "norm": "",
+                    "undr": "Critical Approaches to Automated Text Recognition, ed. Melissa Terras, Paul Gooding, Sarah Ames and Joe Nockels",
+                    "side": "My chapter on "
+                },
+                {
+                    "date": "(forthc.)",
+                    "bold": "The Global Perception Stack",
+                    "norm": "",
+                    "undr": "Cultural Politics of the Computational Image, ed. Paul Roquet",
+                    "side": ""
+                }
+            ]
+        },
+        {
+            "title": "Presentations",
             "entries": [
                 {
                     "date": "2025",
@@ -28,7 +54,7 @@
                     "norm": "",
                     "undr": "Speculative Fiction Across Media (SFAM) Los Angeles",
                     "href": "https://sfamla.org/schedule-2025/",
-                    "side": "My presentation at 4S 2025 Seattle discussed hardware random number generators, which extract entropy from physical processes, and their implications for the supposedly deterministic character of digital computing.."
+                    "side": "My presentation at SFAM 2025 LA proposed to reconsider CAPTCHA in terms of defamiliarization, examining how problem of distinguishing humans from machines tends to effect a convergence between those categories."
                 },
                 {
                     "date": "2025",
@@ -36,7 +62,7 @@
                     "norm": "",
                     "undr": "Society for the Social Study of Science (4S) Seattle",
                     "href": "https://www.4sonline.org/final_program_seattle.php",
-                    "side": "My presentation at 4S 2025 Seattle discussed hardware random number generators, which extract entropy from physical processes, and their implications for the supposedly deterministic character of digital computing.."
+                    "side": "My presentation at 4S 2025 Seattle discussed hardware random number generators, which extract entropy from physical processes, and their implications for the supposedly deterministic character of digital computing."
                 },
                 {
                     "date": "2025",
@@ -53,11 +79,27 @@
             "entries": [
                 {
                     "date": "2025",
+                    "bold": "Rethinking AI",
+                    "norm": ", UCSB Summer Research Academies",
+                    "undr": "Course Designer and Instructor of Record",
+                    "href": "https://www.english.ucsb.edu/courses/fall2025/engl-155ai/",
+                    "side": "I designed this course to introduce students to the shared concerns of humanities and AI research through a series of paired case studies: Cixous's structural feminism and word embedding bias, Berkeley's theory of vision and the vision transformer, and Ramón Llull's theology and language generation, among others."
+                },
+                {
+                    "date": "2026",
+                    "bold": "ENGL 10: Introduction to Literary Studies",
+                    "norm": ", UCSB Dept. of English",
+                    "undr": "Teaching Assistant",
+                    "href": "https://www.english.ucsb.edu/courses/winter-2026/engl-10/",
+                    "side": "I introduced students from across UCSB to literary analysis by exploring ecocritical themes in a wide array of poems, short stories, novels, plays, and films."
+                },
+                {
+                    "date": "2025",
                     "bold": "ENGL155-AI: Critical AI",
                     "norm": ", UCSB Dept. of English",
                     "undr": "Co-Designer and Teaching Assistant",
                     "href": "https://www.english.ucsb.edu/courses/fall2025/engl-155ai/",
-                    "side": "I co-designed and co-lectured with Profs. Rita Raley and Fabian Offert for the inaugral interdisciplinary undergraduate lecture in 'Critical AI', which brought a socially and historicall informed perspective on machine learning to undergraduates from twelve different majors."
+                    "side": "I co-designed and co-lectured with Profs. Rita Raley and Fabian Offert for the inaugral interdisciplinary undergraduate lecture in 'Critical AI', which brought a socially and historically informed perspective on machine learning to undergraduates from twelve different majors."
                 }
             ]
         },
