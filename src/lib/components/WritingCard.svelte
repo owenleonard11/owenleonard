@@ -8,8 +8,9 @@
 
 <AccordionItem open={open}>
     <svelte:fragment slot="summary">
-        <span class="text-xl md:text-2xl font-medium mr-2">{title}</span>
-        <span class="inline-block text-xl text-slate-800">{info}</span>
+        <span class="text-xl md:text-2xl font-medium mr-2">{@html title}</span>
+        <br/>
+        <span class="inline-block text-xl text-slate-800">{@html info}</span>
     </svelte:fragment>
     <svelte:fragment slot="iconOpen">
         <i class="fa-solid fa-caret-down"></i>
@@ -23,14 +24,14 @@
         <div>
             <a class="anchor p-0 text-base md:text-lg lg:text-xl" target="_blank" href="{link}">
                 View online
-                <i class="ml-2 fa-solid fa-arrow-up-right-from-square text-sm md:text-base"></i>
+                <i class="ml-1 fa-solid fa-arrow-up-right-from-square text-sm md:text-base"></i>
             </a>
         </div>
         {/if}
         {#if pdf}
             <a class="anchor p-0 text-base md:text-lg lg:text-xl" target="_blank" href="{pdf}">
-                Download PDF 
-                <i class="ml-2 fa-solid fa-arrow-up-right-from-square text-xs md:text-sm lg:text-base"></i>
+                Download PDF
+                <i class="ml-1 fa-solid fa-arrow-up-right-from-square text-xs md:text-sm lg:text-base"></i>
             </a>
         {/if}
     </svelte:fragment>

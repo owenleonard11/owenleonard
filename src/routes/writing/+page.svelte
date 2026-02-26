@@ -20,7 +20,12 @@
     </div>
     <div class="border-t-2 border-primary-700 mx-4"></div>
     <Accordion>
-        <WritingCard writing={writings.ulysses_supercomputer} open={openItem == 'ulysses'}/>
-        <WritingCard writing={writings.drama_life_dedalus} open={openItem == 'drama'}/>
+        <WritingCard writing={writings.mech_interp_hum} open={openItem == 'mechinterp'}/>
+        <WritingCard writing={writings.remediation_ocr_correction} open={openItem == 'ocr'}/>
+        <WritingCard writing={writings.infra_global_perception} open={openItem == 'perception'}/>
+        <WritingCard writing={writings.berkeley_language_vision} open={openItem == 'berkeley'}/>
+        <WritingCard writing={writings.stein_blind_glass} open={openItem == 'stein'}/>
+        <WritingCard writing={writings.morris_nm} open={openItem == 'morris'}/>
+        <WritingCard writing={writings.drama_life_dedalus} open={openItem == 'joyce'}/>
     </Accordion>
 </div>

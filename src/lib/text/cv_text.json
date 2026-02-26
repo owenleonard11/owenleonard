@@ -27,21 +27,21 @@
                     "bold": "Circuit Hermeneutics: Mechanistic Interpretability as Humanistic Inquiry",
                     "norm": ", with Fabian Offert and Rita Raley",
                     "undr": "Cambridge Forum on AI",
-                    "side": ""
+                    "side": "Our contribution to a forthcoming special issue of <em>Cambridge Forum on AI</em> on the \"New Geometries of Language\" will discuss the \"mechanistic interpretability\" approach to interpretive AI and the concerns it shares with humanistic textual analysis."
                 },
                 {
                     "date": "(forthc.)",
                     "bold": "Digitisation, Remediation, and the History of OCR Correction",
                     "norm": "",
                     "undr": "Critical Approaches to Automated Text Recognition, ed. Melissa Terras, Paul Gooding, Sarah Ames and Joe Nockels",
-                    "side": "My chapter on "
+                    "side": "My contribution to the <em>Critical Approaches to Automated Text Recognition</em> collection will present the history of OCR correction with attention to the further remediation that various techniques perform on already-remediated digitized texts."
                 },
                 {
                     "date": "(forthc.)",
                     "bold": "The Global Perception Stack",
                     "norm": "",
                     "undr": "Cultural Politics of the Computational Image, ed. Paul Roquet",
-                    "side": ""
+                    "side": "My contribution to the <em>Cultural Politics of the Computational Image</em> collection will examine the infrastructure underlying contemporary AI image generation through three case studies: Google's DeepDream, Nvidia's <em>ThisPersonDoesNotExist</em>, and OpenAI's DALL-E series of models."
                 }
             ]
         },

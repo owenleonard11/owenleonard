@@ -50,7 +50,7 @@
 <svelte:window bind:innerWidth />
 
 <div class="flex flex-col lg:flex-row">
-    <div class="mx-8 mb-4 lg:m-8 p-4 lg:w-[70dvw] max-h-[70dvh] lg:max-w-2xl lg:max-h-[80dvh] order-2 lg:order-1 
+    <div class="mx-8 mb-4 lg:m-8 p-4 lg:w-[70dvw] max-h-[70dvh] lg:max-w-4xl lg:max-h-[80dvh] order-2 lg:order-1 
                 border-primary-600 border-2 rounded-md bg-primary-300 font-serif overflow-y-auto">
         <p class="text-2xl md:text-3xl lg:text-4xl font-bold">Owen Leonard</p>
         <p class="text-sm md:text-lg text-slate-700">
@@ -99,7 +99,7 @@
                         class="card lg:text-lg p-4 lg:w-[30vw] rounded-lg bg-primary-300 border-primary-600 border-2 mt-2"
                     >   
                         <div>
-                            {entry.side}
+                            {@html entry.side}
                         </div>
                         {#if 'href' in entry}
                             <a href={entry.href} target="_blank" class="anchor mb-2">

@@ -1,14 +1,49 @@
 {
-    "ulysses_supercomputer": {
-        "title": "Ulysses Supercomputer: Modernism's Social Combinatorics",
-        "info": "(2023)",
-        "desc": "\"Ulysses Supercomputer\" draws on recent studies of the early twentieth century as a prefiguration of the contemporary digital age to develop a novel interpretation of Joyce's <em>Ulysses</em> and early cubist collage. I argue that both use the newspaper to achieve an aleatory aesthetic that nonetheless remains grounded in social context. I conclude by suggesting that this conception of \"social combinatorics\" might be valuable for for interpreting the output of today's large language models.",
+    "mech_interp_hum": {
+        "title": "Circuit Hermeneutics: Mechanistic Interpretability as Humanistic Inquiry",
+        "info": "by Owen Leonard, Fabian Offert, and Rita Raley (forthcoming in <em>Cambridge Forum on AI: Culture and Society</em>)",
+        "desc": "Our contribution to a forthcoming special issue of <em>Cambridge Forum on AI</em> on the \"New Geometries of Language\" will discuss the \"mechanistic interpretability\" approach to interpretive AI and the concerns it shares with humanistic textual analysis.",
         "link": "",
-        "pdf": "https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/ulysses_supercomputer.pdf"
+        "pdf": ""
+    },
+    "remediation_ocr_correction": {
+        "title": "Digitisation, Remediation, and the History of OCR Correction",
+        "info": "by Owen Leonard (forthcoming in <em>Critical Approaches to Automated Text Recognition</em>, ed. Melissa Terras, Paul Gooding, Sarah Ames and Joe Nockels)",
+        "desc": "My contribution to the <em>Critical Approaches to Automated Text Recognition</em> collection will present the history of OCR correction with attention to the further remediation that various techniques perform on already-remediated digitized texts.",
+        "link": "",
+        "pdf": ""
+    },
+    "infra_global_perception": {
+        "title": "The Global Perception Stack",
+        "info": "by Owen Leonard (forthcoming in <em>Cultural Politics of the Computational Image</em>, ed. Paul Roquet)",
+        "desc": "My contribution to the <em>Cultural Politics of the Computational Image</em> collection will examine the infrastructure underlying contemporary AI image generation through three case studies: Google's DeepDream, Nvidia's <em>ThisPersonDoesNotExist</em>, and OpenAI's DALL-E series of models.",
+        "link": "",
+        "pdf": ""
+    },
+    "berkeley_language_vision": {
+        "title": "Author(s) of Nature: The Media Politics of George Berkeley’s Language Analogy",
+        "info": "by Owen Leonard (2025, preprint)",
+        "desc": "'Author(s) of Nature' proposes to consider George Berkeley's \"language analogy\"—the idea, central to his philosophy, that the sensory world is structured like a language—in the political and media-technological context of Berkeley's Ireland.",
+        "link": "",
+        "pdf": "https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/berkeley_language_vision.pdf"
+    },
+    "stein_blind_glass": {
+        "title": "Through the Blind Glass: Combinatorial Hyperlangauge in Gertrude Stein's <em>Tender Buttons</em>",
+        "info": "by Owen Leonard (2025, preprint)",
+        "desc": "'Through the Blind Glass' proposes to consider Stein's enigmatic 1914 book as 'hyperlanuage,' in which the legible sentence is merely an instance of an endlessly generative abstract schema.",
+        "link": "",
+        "pdf": "https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/stein_blind_glass.pdf"
+    },
+    "morris_nm": {
+        "title": "‘Object-Subject Terms’: Reading Robert Morris After the New Materialism",
+        "info": "by Owen Leonard (2024, preprint)",
+        "desc": "\"'Object-Subject Terms' explores the (possibly surprising) homologies between Robert Morris's critical writings of the late 1960s and the new materialism of the 2000s.",
+        "link": "",
+        "pdf": "https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/morris_nm.pdf"
     },
     "drama_life_dedalus": {
         "title": "Drama, Life, and Stephen Dedalus: The Fate of Aestheticism in Joyce",
-        "info": "undergraduate thesis (2023)",
+        "info": "by Owen Leonard (2023, undergraduate thesis)",
         "desc": "\"Drama, Life, and Stephen Dedalus\" traces Joyce's presentation of his literary surrogate from <em>Stephen Hero</em> to <em>Ulysses</em>, with particular attention to his tendency to see the world in aesthetic terms. Although the early Joyce takes this proclivity to be admirable, I show that it becomes a farce in <em>A Portrait</em> and a tragedy in <em>Ulysses</em>.",
         "link": "",
         "pdf": "https://owenleonard-dev-assets.s3.us-west-1.amazonaws.com/drama_life_dedalus.pdf"
