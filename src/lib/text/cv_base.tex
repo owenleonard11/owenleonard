@@ -1,50 +1,61 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[]{fontawesome}
-\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
 \usepackage[T1]{fontenc}
-\usepackage[]{lmodern}
-\usepackage[left=1cm, right=1cm, top=1.5cm, bottom=1cm]{geometry}
-\usepackage[colorlinks=true, urlcolor=black]{hyperref}
+\usepackage{palatino}
+\usepackage[left=1.8cm, right=1.8cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage[colorlinks=true, urlcolor=black, pdftitle={Owen Leonard CV}]{hyperref}
 \usepackage[]{parskip}
 \usepackage[]{titlesec}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[]{graphicx}
 \usepackage[]{adjustbox}
+\usepackage{tabularx}
 \usepackage{tikz}
 \graphicspath{ {src/lib/images/} }
 \titlespacing{\section}{0pt}{\parskip}{1\parskip}
 
+\newlength{\logowidth}
+\setlength{\logowidth}{2.5cm}
+\newcommand{\contactitem}[3]{%
+    \mbox{{\color{PineGreen}#1}\,\href{#2}{#3}}%
+}
+\newcommand{\contactsep}{\hspace{1.2em}}
+
 \newcommand{\cvsection}[1]{
-    {\LARGE \textbf{#1}}
+    {\Large\scshape \textbf{#1}}
 
     \vspace{-10pt}
     \begin{tikzpicture}[baseline]
-        \shade[left color=OliveGreen, right color=transparent!0] (0,0) rectangle (18, 0.04);
+        \shade[left color=OliveGreen, right color=white] (0,0) rectangle (\linewidth, 0.04);
     \end{tikzpicture}
-    
+
 }
 
-\newcommand{\singleentry}[2]{
-    \makebox[2cm][l]{#1} {#2} \par
+\newcommand{\singleentry}[2]{%
+    \noindent\begin{tabularx}{\linewidth}{@{}p{2cm}@{}X@{}}
+        #1 & #2
+    \end{tabularx}\par
 }
-\newcommand{\doubleentry}[3]{
-    \makebox[2cm][l]{#1} {#2} \par
-    \makebox[2cm]{} {#3} \par
+\newcommand{\doubleentry}[3]{%
+    \noindent\begin{tabularx}{\linewidth}{@{}p{2cm}@{}X@{}}
+        #1 & #2 \\
+           & #3
+    \end{tabularx}\par
 }
 
 \begin{document}
-    \begin{minipage}[t]{0.7\textwidth}
-        {\LARGE \textbf{Owen Leonard}}
+    \noindent
+	\begin{minipage}[c]{\dimexpr\linewidth-\logowidth-1em\relax}
+		{\huge\bfseries Owen Leonard}\par
+		\vspace{6pt}
+		\contactitem{\faEnvelope}{mailto:owenleonard@ucsb.edu}{owenleonard@ucsb.edu}\contactsep
+		\contactitem{\faLink}{https://owenleonard.dev/}{owenleonard.dev}\contactsep
+		\contactitem{\faGithub}{https://github.com/owenleonard11}{github.com/owenleonard11}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}[c]{\logowidth}
+		\raggedleft
+		\includegraphics[width=\logowidth]{ologo.png}
+	\end{minipage}
 
-        \vspace{0.2cm}
-        \hspace{0cm}
-        {\color{PineGreen} \faEnvelope} \hspace{0.05cm} \href{mailto:owenleonard@ucsb.edu}{owenleonard@ucsb.edu} \hspace{0.3cm}
-        {\color{PineGreen} \faLink} \hspace{0.05cm} \href{https://owenleonard.dev/}{owenleonard.dev} \hspace{0.3cm}
-        {\color{PineGreen} \faGithub} \hspace{0.05cm} \href{https://github.com/owenleonard11}{github.com/owenleonard11} \hspace{0.3cm}
-    \end{minipage}
-    \begin{minipage}[t]{0.2\textwidth}
-        \vspace{2cm}
-        \hfill
-        \raisebox{0pt}[0pt][0pt]{\includegraphics[width=2.5cm]{ologo.png}}
-    \end{minipage}
-
+	\vspace{0.4cm}
