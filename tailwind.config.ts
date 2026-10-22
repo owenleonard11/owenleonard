@@ -4,8 +4,10 @@ import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import { skeleton } from '@skeletonlabs/tw-plugin';
 import { earthTheme } from './earth-theme'
+import plugin from 'tailwindcss/plugin'
 
-const plugin = require('tailwindcss/plugin')
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
 
 export default {
 	darkMode: 'class',
